@@ -16,7 +16,6 @@ public abstract class GuideMan{
     }
 
     public void trySolveQuestion(String question){
-        System.out.println(this.name);
         if(this.solveQuestion(question)){
             return;
         }else if(this.nextGuideMan!=null) {
