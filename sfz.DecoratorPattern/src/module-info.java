@@ -1,0 +1,2 @@
+module sfz.DecoratorPattern {
+}
