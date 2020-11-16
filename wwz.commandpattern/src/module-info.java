@@ -5,4 +5,5 @@
  * @Modified By:
  **/module wwz.commandpattern {
      requires wwz.basictools;
+     exports commandpattern;
 }

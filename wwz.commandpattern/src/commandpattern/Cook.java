@@ -20,6 +20,7 @@ public class Cook {
     }
 
     public void doOrders() {
+        PrintTool.print("SpongeBob starts dealing the orders");
         for (iOrder order : orders) {
             order.execute();
         }
