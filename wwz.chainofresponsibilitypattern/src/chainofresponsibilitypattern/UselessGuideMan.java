@@ -12,11 +12,12 @@ public class UselessGuideMan extends GuideMan {
 
     public UselessGuideMan(String name) {
         super(name);
+        PrintTool.print("I am idiot "+name+"，I can do nothing");
     }
 
     @Override
     public boolean solveQuestion(String question) {
-        PrintTool.print("I can not solve \"" + question + "\"");
+        PrintTool.print("I can not answer \"" + question + "\"");
         return false;
     }
 }

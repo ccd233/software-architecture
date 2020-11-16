@@ -15,10 +15,13 @@ public abstract class GuideMan{
         this.name=name;
     }
 
+    public String getName(){return this.name;}
+
     public void trySolveQuestion(String question){
         if(this.solveQuestion(question)){
             return;
         }else if(this.nextGuideMan!=null) {
+            PrintTool.print("let "+this.nextGuideMan.getName()+" to help you");
             this.nextGuideMan.trySolveQuestion(question);
         }else {
             PrintTool.print("No one can solve the question");

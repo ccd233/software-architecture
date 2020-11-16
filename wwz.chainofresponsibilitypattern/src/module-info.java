@@ -5,4 +5,5 @@
  * @Modified By:
  **/module wwz.chainofresponsibilitypattern {
      requires wwz.basictools;
+     exports chainofresponsibilitypattern;
 }

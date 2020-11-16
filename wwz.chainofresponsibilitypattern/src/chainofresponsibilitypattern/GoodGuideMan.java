@@ -12,11 +12,12 @@ public class GoodGuideMan extends GuideMan {
 
     public GoodGuideMan(String name) {
         super(name);
+        PrintTool.print("I am mogul "+name+"，I can solve anything");
     }
 
     @Override
     public boolean solveQuestion(String question) {
-        PrintTool.print("I can solve \"" + question + "\"");
+        PrintTool.print("I can answer \"" + question + "\"");
         return true;
     }
 }
