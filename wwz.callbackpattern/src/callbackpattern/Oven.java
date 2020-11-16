@@ -12,13 +12,14 @@ import java.util.concurrent.TimeUnit;
  **/
 public class Oven {
     public void roastSomething(iCallback callback,int time) {
-        PrintTool.print("start cooking krabby patties and it takes "+time+" seconds");
+        PrintTool.print("Oven is roasting the krabby patties," +
+                "and "+time+" seconds later it will be done");
         try {
             TimeUnit.SECONDS.sleep(time);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        PrintTool.print("done");
+        PrintTool.print("Ding~~~ it's done");
         callback.callback();
     }
 }

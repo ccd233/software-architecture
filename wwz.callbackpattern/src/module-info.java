@@ -5,4 +5,5 @@
  * @Modified By:
  **/module wwz.callbackpattern {
      requires wwz.basictools;
+     exports callbackpattern;
 }

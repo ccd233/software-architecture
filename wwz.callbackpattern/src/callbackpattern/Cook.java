@@ -18,12 +18,12 @@ public class Cook implements iCallback {
     }
 
     public void cookKrabbyPatty(int time) {
-        PrintTool.print("cook some krabby patties");
+        PrintTool.print("SpongeBob put the krabby patties into oven");
         this.oven.roastSomething(this,time);
     }
 
     @Override
     public void callback() {
-        PrintTool.print("here are some freshly cooked krabby patties");
+        PrintTool.print("SpongeBob completes the krabby patties and let Squidward Tentacles give them to customers");
     }
 }
