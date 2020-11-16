@@ -1,5 +1,7 @@
 package iteratorpattern;
 
+import tools.PrintTool;
+
 import java.util.ArrayList;
 
 /**
@@ -12,22 +14,23 @@ public class TourBus implements Aggregate {
     public TourBus(){
         this.passengers=new ArrayList<>();
     }
-    private ArrayList<Fish> passengers;
+    private ArrayList<Tourist> passengers;
 
     public int getSize(){
         return passengers.size();
     }
 
-    public void addPassenger(Fish fish){
-        passengers.add(fish);
+    public void addPassenger(Tourist tourist){
+        passengers.add(tourist);
+        PrintTool.print("tourist "+tourist.getName()+" should be in the bus");
     }
 
-    public Fish getFishByIndex(int index){
+    public Tourist getFishByIndex(int index){
         return passengers.get(index);
     }
 
     @Override
     public Iterator iterator() {
-        return new TourBusIterator(this);
+        return new TourGuide(this);
     }
 }

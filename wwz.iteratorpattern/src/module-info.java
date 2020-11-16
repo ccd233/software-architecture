@@ -5,4 +5,5 @@
  * @Modified By:
  **/module wwz.iteratorpattern {
      requires wwz.basictools;
+     exports iteratorpattern;
 }

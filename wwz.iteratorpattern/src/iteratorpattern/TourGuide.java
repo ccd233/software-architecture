@@ -6,11 +6,11 @@ package iteratorpattern;
  * @Date: Created in 21:33 2020/11/4
  * @Modified By:
  **/
-public class TourBusIterator implements Iterator {
+public class TourGuide implements Iterator {
     private TourBus tourBus;
     private int index;
 
-    public TourBusIterator(TourBus bus) {
+    public TourGuide(TourBus bus) {
         index = 0;
         this.tourBus = bus;
     }
