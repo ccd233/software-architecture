@@ -1,4 +1,8 @@
-package DecoratorTry;
+package decoratortry;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * @Author Shen Fangzhi
@@ -6,7 +10,7 @@ package DecoratorTry;
  * @Date: Created in 19:29 2020/11/5
  * @Modified By:
  **/
-public abstract class recreationalActivity {
+public abstract class RecreationalActivity {
 
     public abstract int getTime();
 
@@ -14,10 +18,17 @@ public abstract class recreationalActivity {
 
     public abstract String getInfo();
 
+    public abstract String getElements();
+
     public void show() {
         System.out.println("The time of this activity is " + getTime());
+
         System.out.println("The approximate crowd size of this activity is " + getCrowdSize());
+
         System.out.println("The basic info of this activity is " + getInfo());
-        System.out.println("");
+
+        System.out.println("This activity has these elements:" + getElements());
+
+        System.out.println();
     }
 }

@@ -1,4 +1,4 @@
-package DecoratorTry;
+package decoratortry;
 
 /**
  * @Author Shen Fangzhi
@@ -6,20 +6,28 @@ package DecoratorTry;
  * @Date: Created in 19:56 2020/11/5
  * @Modified By:
  **/
-public class forest extends theme {
-    public forest(recreationalActivity recreationalactivity) {
+public class Forest extends Element {
+    public Forest(RecreationalActivity recreationalactivity) {
         super(recreationalactivity);
     }
 
+    @Override
     public int getTime() {
         return recreationalactivity.getTime();
     }
 
+    @Override
     public int getCrowdSize() {
         return recreationalactivity.getCrowdSize();
     }
 
+    @Override
     public String getInfo() {
-        return recreationalactivity.getInfo() + "The theme of this carnival is forest!";
+        return recreationalactivity.getInfo();
+    }
+
+    @Override
+    public String getElements() {
+        return recreationalactivity.getElements() + " forest";
     }
 }

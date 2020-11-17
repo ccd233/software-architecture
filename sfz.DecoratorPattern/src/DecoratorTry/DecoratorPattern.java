@@ -1,4 +1,4 @@
-package DecoratorTry;
+package decoratortry;
 
 /**
  * @Author Shen Fangzhi
@@ -15,11 +15,13 @@ public class DecoratorPattern {
                 "By using the different theme class,it's really convenient to alter or superposed the theme." + "\n");
 
         String info = "This is a great activity in which you could play with numerous balloons.Enjoy yourselves!";
-        recreationalActivity a1 = new balloonCarnival(20, 100, info);
-        recreationalActivity a2 = new cloud(a1);
-        recreationalActivity a3 = new forest(a2);
+        RecreationalActivity a1 = new BalloonCarnival(20, 100, info);
+        RecreationalActivity a2 = new Cloud(a1);
+        RecreationalActivity a3 = new Forest(a2);
+        RecreationalActivity a4 = new Forest(a3);
         a1.show();
         a2.show();
         a3.show();
+        a4.show();
     }
 }

@@ -1,3 +1,3 @@
 module sfz.DecoratorPattern {
-    exports DecoratorTry;
+    exports decoratortry;
 }
