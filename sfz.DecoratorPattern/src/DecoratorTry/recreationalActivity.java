@@ -18,5 +18,6 @@ public abstract class recreationalActivity {
         System.out.println("The time of this activity is " + getTime());
         System.out.println("The approximate crowd size of this activity is " + getCrowdSize());
         System.out.println("The basic info of this activity is " + getInfo());
+        System.out.println("");
     }
 }
