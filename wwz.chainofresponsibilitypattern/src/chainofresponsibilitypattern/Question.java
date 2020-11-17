@@ -4,7 +4,7 @@ import tools.PrintTool;
 
 /**
  * @Author Wang Wenzheng
- * @Description:
+ * @Description: 代表问题的类
  * @Date: Created in 21:27 2020/11/16
  * @Modified By:
  **/

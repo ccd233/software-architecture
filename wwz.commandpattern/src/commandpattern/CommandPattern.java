@@ -4,11 +4,26 @@ import tools.PrintTool;
 
 /**
  * @Author Wang Wenzheng
- * @Description:
+ * @Description: 命令模式的封装类，提供一个接口供Main调用
  * @Date: Created in 21:50 2020/11/5
  * @Modified By:
  **/
 public class CommandPattern {
+    /**
+     * @Author: Wang Wenzheng
+     * @Description: 将命令模式的调用封装为一个静态方法
+     *
+     * @Param Type
+     * param:
+     * resume:
+     *
+     * @Return Value
+     * @return: void
+     * @resume:
+     *
+     * @Date: 21:23 2020/11/17
+     * @Modified By:
+    **/
     public static void command() {
         PrintTool.print(
                 "Scenario:The Krusty Krab has some dishes, " +
