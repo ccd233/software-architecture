@@ -1,9 +1,9 @@
 package test;
 
-import DecoratorTry.DecoratorPattern;
-import FacadeTry.FacadePattern;
-import ProxyTry.ProxyPattern;
-
+import decoratortry.DecoratorPattern;
+import facadetry.FacadePattern;
+import proxytry.ProxyPattern;
+import dataaccessobjectpattern.DataAccessObjectPattern;
 
 /**
  * @Author Shen Fangzhi
@@ -16,5 +16,6 @@ public class Main {
         DecoratorPattern.decorator();
         FacadePattern.facade();
         ProxyPattern.proxy();
+        DataAccessObjectPattern.data();
     }
 }
