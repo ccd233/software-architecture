@@ -6,7 +6,9 @@ package dataaccessobjectpattern;
  * @Date: Created in 18:55 2020/11/18
  * @Modified By:
  **/
+
 public class Passenger {
+
     private String name;
     private int passengerNo;
 
@@ -27,6 +29,21 @@ public class Passenger {
         return passengerNo;
     }
 
+    /**
+     * @Author: Shen Fangzhi
+     * @Description: 设置该passenger的numebr
+     *
+     * @Param Type
+     * param: passengerNo
+     * resume:passenger的numebr
+     *
+     * @Return Value
+     * @return: void
+     * @resume:
+     *
+     * @Date: 14:04 2020/11/19
+     * @Modified By:
+    **/
     public void setPassengerNo(int passengerNo) {
         this.passengerNo = passengerNo;
     }

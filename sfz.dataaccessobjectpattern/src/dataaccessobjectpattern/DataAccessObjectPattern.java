@@ -1,5 +1,7 @@
 package dataaccessobjectpattern;
 
+import tools.PrintTool;
+
 /**
  * @Author Shen Fangzhi
  * @Description: A simple demo to show the use of the Data Access Object Pattern
@@ -7,13 +9,25 @@ package dataaccessobjectpattern;
  * @Modified By:
  **/
 public class DataAccessObjectPattern {
+    /**
+     * @Author: Shen Fangzhi
+     * @Description: 数据访问对象模式封装为静态方法
+     * @Param Type
+     * param:
+     * resume:
+     * @Return Value
+     * @return: void
+     * @resume:
+     * @Date: 14:18 2020/11/19
+     * @Modified By:
+     **/
     public static void data() {
         PassengerInterface passengerQuery = new PassengerInterfaceImplement();
 
 //        Check out all the passengers.
         for (Passenger passenger : passengerQuery.getAllPassengers()) {
-            System.out.println("The passenger's No is " + passenger.getPassengerNo());
-            System.out.println("The passenger's name is " + passenger.getName());
+            PrintTool.print("The passenger's No is " + passenger.getPassengerNo() + '\n' +
+                    "The passenger's name is " + passenger.getName());
         }
 
 //        update the changed info of one specified passenger.
@@ -27,6 +41,6 @@ public class DataAccessObjectPattern {
 
 //        get a specified passenger's info
         Passenger passengerGet = passengerQuery.getPassenger(1853562);
-        System.out.println("The passenger's info is : Passenger No " + passengerGet.getPassengerNo() + ",name " + passengerGet.getName());
+        PrintTool.print("The passenger's info is : Passenger No " + passengerGet.getPassengerNo() + ",name " + passengerGet.getName());
     }
 }

@@ -1,5 +1,7 @@
 package dataaccessobjectpattern;
 
+import tools.PrintTool;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,6 +15,21 @@ public class PassengerInterfaceImplement implements PassengerInterface {
 
     List<Passenger> passengers;
 
+    /**
+     * @Author: Shen Fangzhi
+     * @Description: 初始化游客序列，添加两个初始游客lzy、sfz
+     *
+     * @Param Type
+     * param:
+     * resume:
+     *
+     * @Return Value
+     * @return: * @return: null
+     * @resume:
+     *
+     * @Date: 14:12 2020/11/19
+     * @Modified By:
+    **/
     public PassengerInterfaceImplement() {
         passengers = new ArrayList<Passenger>();
         Passenger passenger1 = new Passenger("sfz", 1853574);
@@ -21,17 +38,62 @@ public class PassengerInterfaceImplement implements PassengerInterface {
         passengers.add(passenger2);
     }
 
+    /**
+     * @Author: Shen Fangzhi
+     * @Description: 删除游客的具体实现
+     *
+     * @Param Type
+     * param: passenger
+     * resume: 表示某个游客
+     *
+     * @Return Value
+     * @return: void
+     * @resume:
+     *
+     * @Date: 14:13 2020/11/19
+     * @Modified By:
+    **/
     @Override
     public void deletePassenger(Passenger passenger) {
         passengers.remove(passenger.getPassengerNo());
-        System.out.println("This passenger's info is deleted: Passenger No " + passenger.getPassengerNo());
+        PrintTool.print("This passenger's info is deleted: Passenger No " + passenger.getPassengerNo());
     }
 
+    /**
+     * @Author: Shen Fangzhi
+     * @Description: 获取所有有课程信息具体实现
+     *
+     * @Param Type
+     * param:
+     * resume:
+     *
+     * @Return Value
+     * @return: java.util.List<dataaccessobjectpattern.Passenger>
+     * @resume:
+     *
+     * @Date: 14:13 2020/11/19
+     * @Modified By:
+    **/
     @Override
     public List<Passenger> getAllPassengers() {
         return passengers;
     }
 
+    /**
+     * @Author: Shen Fangzhi
+     * @Description: 获取指定游客具体实现
+     *
+     * @Param Type
+     * param: passengerNo
+     * resume: 表示游客的number
+     *
+     * @Return Value
+     * @return: dataaccessobjectpattern.Passenger
+     * @resume: 返回一个游客实例
+     *
+     * @Date: 14:15 2020/11/19
+     * @Modified By:
+    **/
     @Override
     public Passenger getPassenger(int passengerNo) {
         for (Passenger passenger : passengers) {
@@ -42,6 +104,21 @@ public class PassengerInterfaceImplement implements PassengerInterface {
         return null;
     }
 
+    /**
+     * @Author: Shen Fangzhi
+     * @Description: 更新指定游客信息具体实现
+     *
+     * @Param Type
+     * param: passenger
+     * resume: 表示一个具体游客
+     *
+     * @Return Value
+     * @return: void
+     * @resume:
+     *
+     * @Date: 14:17 2020/11/19
+     * @Modified By:
+    **/
     @Override
     public void updatePassenger(Passenger passenger) {
         for (Passenger passengerOne : passengers) {
@@ -49,12 +126,27 @@ public class PassengerInterfaceImplement implements PassengerInterface {
                 passengerOne.setName(passenger.getName());
             }
         }
-        System.out.println("The passenger's info is updated: Passenger No " + passenger.getPassengerNo());
+        PrintTool.print("The passenger's info is updated: Passenger No " + passenger.getPassengerNo());
     }
 
+    /**
+     * @Author: Shen Fangzhi
+     * @Description:添加一个游客具体实现
+     *
+     * @Param Type
+     * param: passenger
+     * resume: 表示一个游客实例
+     *
+     * @Return Value
+     * @return: void
+     * @resume:
+     *
+     * @Date: 14:17 2020/11/19
+     * @Modified By:
+    **/
     @Override
     public void addPassenger(Passenger passenger) {
         passengers.add(passenger);
-        System.out.println("The new passenger's info is added: Passenger No " + passenger.getPassengerNo());
+        PrintTool.print("The new passenger's info is added: Passenger No " + passenger.getPassengerNo());
     }
 }

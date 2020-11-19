@@ -11,5 +11,6 @@
     <orderEntry type="module" module-name="sfz.FacadePattern" />
     <orderEntry type="module" module-name="sfz.ProxyPattern" />
     <orderEntry type="module" module-name="sfz.DataAccessObjectPattern" />
+    <orderEntry type="module" module-name="wwz.basictools" />
   </component>
 </module>
