@@ -47,5 +47,6 @@
     <orderEntry type="module" module-name="sfz.facadepattern" />
     <orderEntry type="module" module-name="sfz.proxypattern" />
     <orderEntry type="module" module-name="lz.dataaccessobjectpattern" />
+    <orderEntry type="module" module-name="wwz.fluentinterfacepattern" />
   </component>
 </module>

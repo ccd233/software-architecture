@@ -20,6 +20,7 @@ module all.allpattern {
     requires wwz.chainofresponsibilitypattern;
     requires wwz.commandpattern;
     requires wwz.iteratorpattern;
+    requires wwz.fluentinterfacepattern;
     requires nyx.adapterpattern;
     requires nyx.builderpattern;
     requires nyx.prototypepattern;

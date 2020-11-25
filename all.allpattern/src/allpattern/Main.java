@@ -4,6 +4,7 @@ import abstractfactorypattern.AbstractFactoryPattern;
 import adapterpattern.AdapterPattern;
 import builderpattern.BuilderPattern;
 import filterpattern.FilterPattern;
+import fluentinterfacepattern.FluentInterfacePattern;
 import mementopattern.MementoPattern;
 import nullobjectpattern.NullObjectPattern;
 import factorypattern.FactoryPattern;
@@ -97,7 +98,6 @@ public class Main {
         registerPattern("NullObjectPattern",NullObjectPattern::work);
         registerPattern("SingletonPattern",SingletonPattern::work);
         //4
-        //demo.demo是什么华为操作？
         registerPattern("FilterPattern",FilterPattern::work);
         registerPattern("MementoPattern",MementoPattern::work);
         registerPattern("StatePattern", StatePattern::work);
@@ -109,7 +109,6 @@ public class Main {
         registerPattern("StrategyPattern", StrategyPattern::work);
         registerPattern("TemplateMethodPattern", StrategyPattern::work);
         //12
-        //你俩一起去华为吧
         registerPattern("AdapterPattern",AdapterPattern::work);
         registerPattern("BuilderPattern",BuilderPattern::work);
         registerPattern("PrototypePattern",PrototypePattern::work);
@@ -120,7 +119,6 @@ public class Main {
         registerPattern("FacadePattern",FacadePattern::facade);
         registerPattern("ProxyPattern",ProxyPattern::proxy);
         //20
-        //这的类名哪个臭狗写的一定要改，改完记得顺便帮我骂一下他
         registerPattern("BridgePattern",BridgePattern::ordering);
         registerPattern("CompositePattern",CompositePattern::addsouvenir);
         registerPattern("FlyweightPattern",FlyweightPattern::displaying);
@@ -131,14 +129,13 @@ public class Main {
         registerPattern("CommandPattern",CommandPattern::command);
         registerPattern("IteratorPattern",IteratorPattern::iterator);
         //28
-        //这的类名又哪个臭狗写的一定要改，改完帮我再骂一下他
         registerPattern("CompositeEntityPattern",CompositeEntityPattern::work);
         registerPattern("DaoPattern",DaoPattern::work);
         registerPattern("InterpreterPattern",InterpreterPattern::work);
         registerPattern("MediatorPattern",MediatorPattern::work);
         //新加设计模式必须且仅需在下面注册
         //eg：registerPattern("PatternNameYouWannaShow",classname::methodname);
-
+        registerPattern("FluentInterfacePattern", FluentInterfacePattern.fluentInterface(););
 
         //统计数量
         patternNumber = patternsFunc.size()-1;
