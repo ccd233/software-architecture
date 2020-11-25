@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../AbstractFactoryPattern/AbstractFactoryPattern.iml" filepath="$PROJECT_DIR$/../AbstractFactoryPattern/AbstractFactoryPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Factory.iml" filepath="$PROJECT_DIR$/Factory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../NullObjectPattern/NullObjectPattern.iml" filepath="$PROJECT_DIR$/../NullObjectPattern/NullObjectPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SingletonPattern/SingletonPattern.iml" filepath="$PROJECT_DIR$/../SingletonPattern/SingletonPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SingletonPattern/SingletonPattern1.iml" filepath="$PROJECT_DIR$/../SingletonPattern/SingletonPattern1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tools/tools.iml" filepath="$PROJECT_DIR$/tools/tools.iml" />
+    </modules>
+  </component>
+</project>

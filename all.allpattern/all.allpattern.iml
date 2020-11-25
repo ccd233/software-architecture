@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="softwarearch1" />
+    <orderEntry type="module" module-name="softwarearch7" />
+    <orderEntry type="module" module-name="sjg.compositepattern" />
+    <orderEntry type="module" module-name="ccd.nullobjectpattern" />
+    <orderEntry type="module" module-name="wwz.basictools" />
+    <orderEntry type="module" module-name="softwarearch3" />
+    <orderEntry type="module" module-name="softwarearch2" />
+    <orderEntry type="module" module-name="nyx.adapterpattern" />
+    <orderEntry type="module" module-name="nyx.builderpattern" />
+    <orderEntry type="module" module-name="wwz.iteratorpattern" />
+    <orderEntry type="module" module-name="lz.strategypattern" />
+    <orderEntry type="module" module-name="ccd.singletonpattern" />
+    <orderEntry type="module" module-name="lz.templatemethodpattern" />
+    <orderEntry type="module" module-name="wwz.chainofresponsibilitypattern" />
+    <orderEntry type="module" module-name="ccd.factorypattern" />
+    <orderEntry type="module" module-name="zlf.compositeentitypattern" />
+    <orderEntry type="module" module-name="softwarearch4" />
+    <orderEntry type="module" module-name="sjg.bridgepattern" />
+    <orderEntry type="module" module-name="zlf.mediatorpattern" />
+    <orderEntry type="module" module-name="nyx.transferobjectpattern" />
+    <orderEntry type="module" module-name="wwz.callbackpattern" />
+    <orderEntry type="module" module-name="zlf.daopattern" />
+    <orderEntry type="module" module-name="sjg.flyweightpattern" />
+    <orderEntry type="module" module-name="nyx.prototypepattern" />
+    <orderEntry type="module" module-name="lz.observerpattern" />
+    <orderEntry type="module" module-name="wwz.commandpattern" />
+    <orderEntry type="module" module-name="softwarearch5" />
+    <orderEntry type="module" module-name="zlf.interpreterpattern" />
+    <orderEntry type="module" module-name="softwarearch" />
+    <orderEntry type="module" module-name="sjg.multitonpattern" />
+    <orderEntry type="module" module-name="ccd.abstractfactorypattern" />
+    <orderEntry type="module" module-name="softwarearch6" />
+    <orderEntry type="module" module-name="gjh.mementopattern" />
+    <orderEntry type="module" module-name="gjh.statepattern" />
+    <orderEntry type="module" module-name="gjh.visitorpattern" />
+    <orderEntry type="module" module-name="sfz.dataaccessobjectpattern" />
+    <orderEntry type="module" module-name="sfz.decoratorpattern" />
+    <orderEntry type="module" module-name="sfz.facadepattern" />
+    <orderEntry type="module" module-name="sfz.proxypattern" />
+    <orderEntry type="module" module-name="lz.dataaccessobjectpattern" />
+  </component>
+</module>

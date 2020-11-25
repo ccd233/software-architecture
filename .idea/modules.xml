@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/all.allpattern/all.allpattern.iml" filepath="$PROJECT_DIR$/all.allpattern/all.allpattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ccd/ccd.abstractfactorypattern/ccd.abstractfactorypattern.iml" filepath="$PROJECT_DIR$/ccd/ccd.abstractfactorypattern/ccd.abstractfactorypattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ccd/ccd.factorypattern/ccd.factorypattern.iml" filepath="$PROJECT_DIR$/ccd/ccd.factorypattern/ccd.factorypattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ccd/ccd.nullobjectpattern/ccd.nullobjectpattern.iml" filepath="$PROJECT_DIR$/ccd/ccd.nullobjectpattern/ccd.nullobjectpattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ccd/ccd.singletonpattern/ccd.singletonpattern.iml" filepath="$PROJECT_DIR$/ccd/ccd.singletonpattern/ccd.singletonpattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gjh/gjh.filterpattern/gjh.filterpattern.iml" filepath="$PROJECT_DIR$/gjh/gjh.filterpattern/gjh.filterpattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gjh/gjh.mementopattern/gjh.mementopattern.iml" filepath="$PROJECT_DIR$/gjh/gjh.mementopattern/gjh.mementopattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gjh/gjh.statepattern/gjh.statepattern.iml" filepath="$PROJECT_DIR$/gjh/gjh.statepattern/gjh.statepattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gjh/gjh.visitorpattern/gjh.visitorpattern.iml" filepath="$PROJECT_DIR$/gjh/gjh.visitorpattern/gjh.visitorpattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lz/lz.dataaccessobjectpattern/lz.dataaccessobjectpattern.iml" filepath="$PROJECT_DIR$/lz/lz.dataaccessobjectpattern/lz.dataaccessobjectpattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lz/lz.observerpattern/lz.observerpattern.iml" filepath="$PROJECT_DIR$/lz/lz.observerpattern/lz.observerpattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lz/lz.strategypattern/lz.strategypattern.iml" filepath="$PROJECT_DIR$/lz/lz.strategypattern/lz.strategypattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lz/lz.templatemethodpattern/lz.templatemethodpattern.iml" filepath="$PROJECT_DIR$/lz/lz.templatemethodpattern/lz.templatemethodpattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nyx/nyx.adapterpattern/nyx.adapterpattern.iml" filepath="$PROJECT_DIR$/nyx/nyx.adapterpattern/nyx.adapterpattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nyx/nyx.builderpattern/nyx.builderpattern.iml" filepath="$PROJECT_DIR$/nyx/nyx.builderpattern/nyx.builderpattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nyx/nyx.prototypepattern/nyx.prototypepattern.iml" filepath="$PROJECT_DIR$/nyx/nyx.prototypepattern/nyx.prototypepattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nyx/nyx.transferobjectpattern/nyx.transferobjectpattern.iml" filepath="$PROJECT_DIR$/nyx/nyx.transferobjectpattern/nyx.transferobjectpattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sfz/sfz.dataaccessobjectpattern/sfz.dataaccessobjectpattern.iml" filepath="$PROJECT_DIR$/sfz/sfz.dataaccessobjectpattern/sfz.dataaccessobjectpattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sfz/sfz.decoratorpattern/sfz.decoratorpattern.iml" filepath="$PROJECT_DIR$/sfz/sfz.decoratorpattern/sfz.decoratorpattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sfz/sfz.facadepattern/sfz.facadepattern.iml" filepath="$PROJECT_DIR$/sfz/sfz.facadepattern/sfz.facadepattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sfz/sfz.proxypattern/sfz.proxypattern.iml" filepath="$PROJECT_DIR$/sfz/sfz.proxypattern/sfz.proxypattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sjg/sjg.bridgepattern/sjg.bridgepattern.iml" filepath="$PROJECT_DIR$/sjg/sjg.bridgepattern/sjg.bridgepattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sjg/sjg.compositepattern/sjg.compositepattern.iml" filepath="$PROJECT_DIR$/sjg/sjg.compositepattern/sjg.compositepattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sjg/sjg.flyweightpattern/sjg.flyweightpattern.iml" filepath="$PROJECT_DIR$/sjg/sjg.flyweightpattern/sjg.flyweightpattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sjg/sjg.multitonpattern/sjg.multitonpattern.iml" filepath="$PROJECT_DIR$/sjg/sjg.multitonpattern/sjg.multitonpattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/softwarearch.iml" filepath="$PROJECT_DIR$/softwarearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/softwarearch1.iml" filepath="$PROJECT_DIR$/softwarearch1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/softwarearch2.iml" filepath="$PROJECT_DIR$/softwarearch2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/softwarearch3.iml" filepath="$PROJECT_DIR$/softwarearch3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/softwarearch4.iml" filepath="$PROJECT_DIR$/softwarearch4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/softwarearch5.iml" filepath="$PROJECT_DIR$/softwarearch5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/softwarearch6.iml" filepath="$PROJECT_DIR$/softwarearch6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/softwarearch7.iml" filepath="$PROJECT_DIR$/softwarearch7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wwz/wwz.basictools/wwz.basictools.iml" filepath="$PROJECT_DIR$/wwz/wwz.basictools/wwz.basictools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wwz/wwz.callbackpattern/wwz.callbackpattern.iml" filepath="$PROJECT_DIR$/wwz/wwz.callbackpattern/wwz.callbackpattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wwz/wwz.chainofresponsibilitypattern/wwz.chainofresponsibilitypattern.iml" filepath="$PROJECT_DIR$/wwz/wwz.chainofresponsibilitypattern/wwz.chainofresponsibilitypattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wwz/wwz.commandpattern/wwz.commandpattern.iml" filepath="$PROJECT_DIR$/wwz/wwz.commandpattern/wwz.commandpattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wwz/wwz.iteratorpattern/wwz.iteratorpattern.iml" filepath="$PROJECT_DIR$/wwz/wwz.iteratorpattern/wwz.iteratorpattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zlf/zlf.compositeentitypattern/zlf.compositeentitypattern.iml" filepath="$PROJECT_DIR$/zlf/zlf.compositeentitypattern/zlf.compositeentitypattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zlf/zlf.daopattern/zlf.daopattern.iml" filepath="$PROJECT_DIR$/zlf/zlf.daopattern/zlf.daopattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zlf/zlf.interpreterpattern/zlf.interpreterpattern.iml" filepath="$PROJECT_DIR$/zlf/zlf.interpreterpattern/zlf.interpreterpattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zlf/zlf.mediatorpattern/zlf.mediatorpattern.iml" filepath="$PROJECT_DIR$/zlf/zlf.mediatorpattern/zlf.mediatorpattern.iml" />
+    </modules>
+  </component>
+</project>
