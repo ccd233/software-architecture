@@ -3,6 +3,8 @@ package allpattern;
 import abstractfactorypattern.AbstractFactoryPattern;
 import adapterpattern.AdapterPattern;
 import builderpattern.BuilderPattern;
+import converterpattern.Converter;
+import converterpattern.ConverterPattern;
 import filterpattern.FilterPattern;
 import fluentinterfacepattern.FluentInterfacePattern;
 import mementopattern.MementoPattern;
@@ -135,7 +137,8 @@ public class Main {
         registerPattern("MediatorPattern",MediatorPattern::work);
         //新加设计模式必须且仅需在下面注册
         //eg：registerPattern("PatternNameYouWannaShow",classname::methodname);
-        registerPattern("FluentInterfacePattern", FluentInterfacePattern.fluentInterface(););
+        registerPattern("FluentInterfacePattern", FluentInterfacePattern::fluentInterface);
+        registerPattern("ConverterPattern", ConverterPattern::converter);
 
         //统计数量
         patternNumber = patternsFunc.size()-1;

@@ -21,6 +21,7 @@ module all.allpattern {
     requires wwz.commandpattern;
     requires wwz.iteratorpattern;
     requires wwz.fluentinterfacepattern;
+    requires wwz.converterpattern;
     requires nyx.adapterpattern;
     requires nyx.builderpattern;
     requires nyx.prototypepattern;
