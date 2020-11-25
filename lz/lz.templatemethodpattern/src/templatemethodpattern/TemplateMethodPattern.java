@@ -8,7 +8,7 @@ import java.util.Map;
 
 /**
  * @Author: Lin Zhe
- * @Description: interface for purchase and pay
+ * @Description: 使用模板方法模式实现微信支付和支付宝支付对网络支付接口的使用
  *
  * @Param Type
  * param: null
@@ -87,6 +87,7 @@ public class TemplateMethodPattern {
                 } else {
                     System.out.println("支付失败，请检查你输入的数据是否正确.");
                 }
+                System.out.println("已经退出");
                 order.setClosed();
             }
         }
