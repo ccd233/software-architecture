@@ -9,6 +9,21 @@ import tools.PrintTool;
  * @Modified By:
  **/
 public class ConverterPattern {
+    /**
+     * @Author: Wang Wenzheng
+     * @Description: 转换器模式的封装接口
+     *
+     * @Param Type
+     * param: 
+     * resume: 
+     *
+     * @Return Value
+     * @return: void
+     * @resume: 
+     *
+     * @Date: 21:48 2020/11/25
+     * @Modified By: 
+    **/
     public static void converter() {
         PrintTool.print("Captain Eugene adds some dishes into the file on his PC first");
         LocalMenuFile local = new LocalMenuFile();
