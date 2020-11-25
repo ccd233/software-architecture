@@ -7,7 +7,7 @@ package delegationpattern;
  * @Modified By:
  **/
 public class Demo {
-    public static void main(String []args) {
+    public void delegationPattern(){
         Dolphin dolphin = new Dolphin();
         System.out.println("the dolphin is born with jumping:");
         dolphin.showSkill();
