@@ -8,7 +8,7 @@ import java.util.Map;
 
 /**
  * @Author: Lin Zhe
- * @Description: interface for purchase and pay
+ * @Description: 支付时使用Pay Strategy策略实现了不同支付方法的支付
  *
  * @Param Type
  * param: null
@@ -110,6 +110,7 @@ public class StrategyPattern {
                 } else {
                     System.out.println("支付失败，请检查你输入的数据是否正确.");
                 }
+                System.out.println("已经退出");
                 order.setClosed();
             }
         }
