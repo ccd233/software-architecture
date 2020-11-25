@@ -2,7 +2,7 @@ package observerpattern;
 
 /**
  * @Author: Lin Zhe
- * @Description: interface for log observer
+ * @Description: 使用观察者模式实现对编辑发布信息的订阅
  *
  * @Param Type
  * param: null
