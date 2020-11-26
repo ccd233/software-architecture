@@ -8,8 +8,14 @@ import tools.PrintTool;
 
 public class AnimalFactory {
     public static final String[] names = {"小鲤鱼泡泡", "水母小美美", "双面龟"};
+    /**
+     * 通过判断动物是否存在用工厂创建相应的对象
+     * @param name
+     * @return nullobjectpattern.AbstractAnimal
+     * @author Chi Chengdao
+     * @date 2020/11/26 1:39 下午
+     */
     public static AbstractAnimal getAnimal(String name){
-        PrintTool.print("Create Animal");
         for (int i = 0; i < names.length; i++) {
             if (names[i].equalsIgnoreCase(name)){
                 return new RealAnimal(name);

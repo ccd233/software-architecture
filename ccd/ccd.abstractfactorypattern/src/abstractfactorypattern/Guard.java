@@ -8,7 +8,6 @@ import tools.PrintTool;
 public class Guard implements Staff{
     @Override
     public void work() {
-        PrintTool.print("Guard is Working");
-        System.out.println("I am a guard, I can keep you safe!");
+        PrintTool.print("I am a guard, I can keep you safe!");
     }
 }

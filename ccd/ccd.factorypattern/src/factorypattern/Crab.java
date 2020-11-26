@@ -9,12 +9,10 @@ import tools.PrintTool;
 public class Crab implements Animal{
     @Override
     public void speak(){
-        PrintTool.print("Crab is Speaking");
-        System.out.println("I am Crab!");
+        PrintTool.print("I am Crab!");
     }
     @Override
     public void show() {
-        PrintTool.print("Crab is Showing");
-        System.out.println("I have claws,so I can pinch!");
+        PrintTool.print("I have claws,so I can pinch!");
     }
 }

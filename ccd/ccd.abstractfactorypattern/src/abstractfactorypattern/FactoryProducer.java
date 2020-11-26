@@ -9,7 +9,6 @@ import tools.PrintTool;
 
 public abstract class FactoryProducer {
     public static AbstractFactory getFactory(String choice){
-        PrintTool.print("Creating Factory");
         if(choice.equalsIgnoreCase("Animal")){
             return new AnimalFactory();
         } else if(choice.equalsIgnoreCase("Staff")){

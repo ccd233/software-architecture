@@ -8,7 +8,6 @@ import tools.PrintTool;
 public class TourGuide implements Staff{
     @Override
     public void work() {
-        PrintTool.print("TourGuide is Working");
-        System.out.println("I am a guide, I can show you around!");
+        PrintTool.print("I am a guide, I can show you around!");
     }
 }

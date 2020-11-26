@@ -8,12 +8,13 @@ import tools.PrintTool;
 
 public class AnimalFactory extends AbstractFactory{
 
+    @Override
     public Staff getStaff(String staff) {
         return null;
     }
 
+    @Override
     public Animal getAnimal(String animal){
-        PrintTool.print("Animal Factory is Creating");
         if(animal == null){
             return null;
         }

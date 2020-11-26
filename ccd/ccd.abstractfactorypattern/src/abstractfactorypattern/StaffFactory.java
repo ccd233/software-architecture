@@ -10,9 +10,9 @@ public class StaffFactory extends AbstractFactory{
     public Animal getAnimal(String animal) {
         return null;
     }
+
     @Override
     public Staff getStaff(String staff){
-        PrintTool.print("Staff Factory is Creating");
         if(staff == null){
             return null;
         }

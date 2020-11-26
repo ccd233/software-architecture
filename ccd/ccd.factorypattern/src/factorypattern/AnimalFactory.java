@@ -7,7 +7,6 @@ import tools.PrintTool;
 
 public class AnimalFactory {
     public Animal getAnimal(String shapeType){
-        PrintTool.print("Creating an animal");
         if(shapeType == null){
             return null;
         }

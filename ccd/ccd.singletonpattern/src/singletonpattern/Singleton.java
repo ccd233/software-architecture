@@ -13,9 +13,15 @@ public class Singleton {
     private Singleton(String name) {
         this.name = name;
     }
-
+    /**
+     * 创建（获取）单例
+     * @param name 
+     * @return singletonpattern.Singleton
+     * @author Chi Chengdao
+     * @date 2020/11/26 1:33 下午
+     */
+    
     public static Singleton getInstance(String name) {
-        PrintTool.print("Creating Singleton");
         Singleton result = instance;
         if (result != null) {
             return result;

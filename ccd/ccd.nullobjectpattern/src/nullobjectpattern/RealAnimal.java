@@ -12,13 +12,10 @@ public class RealAnimal extends AbstractAnimal{
     }
     @Override
     public String getName() {
-        PrintTool.print("Get Animal's Name");
         return name;
     }
-
     @Override
     public boolean isNil() {
-        PrintTool.print("Check the Object");
         return false;
     }
 }
