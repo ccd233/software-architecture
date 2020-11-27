@@ -49,5 +49,16 @@
     <orderEntry type="module" module-name="lz.dataaccessobjectpattern" />
     <orderEntry type="module" module-name="wwz.fluentinterfacepattern" />
     <orderEntry type="module" module-name="wwz.converterpattern" />
+    <orderEntry type="module" module-name="ccd.mvcpattern" />
+    <orderEntry type="module" module-name="ccd.interceptingfilterpattern" />
+    <orderEntry type="module" module-name="gjh.balkingpattern" />
+    <orderEntry type="module" module-name="sfz.servantpattern" />
+    <orderEntry type="module" module-name="sfz.typeobjectpattern" />
+    <orderEntry type="module" module-name="sjg.doublecheckedlockingpattern" />
+    <orderEntry type="module" module-name="nyx.delegationpattern" />
+    <orderEntry type="module" module-name="nyx.modulepattern" />
+    <orderEntry type="module" module-name="zlf.gamelooppattern" />
+    <orderEntry type="module" module-name="zlf.monostatepattern" />
+    <orderEntry type="module" module-name="lz.servicelocatorpattern" />
   </component>
 </module>

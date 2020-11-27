@@ -21,7 +21,7 @@ public class TypeObjectPattern {
      * @Date: 20:53 2020/11/25
      * @Modified By:
      **/
-    public static void type() {
+    public static void typeObject() {
         PrintTool.print("Type Object Pattern" + "\n" +
                 "Scenario Introduction:This is used for the customers who intend to choose the surfing facility." + "\n" +
                 "Workers can create an attribute class and use it to create a facility class." + "\n" +
