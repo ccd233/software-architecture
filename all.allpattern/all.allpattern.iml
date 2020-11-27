@@ -17,9 +17,7 @@
     <orderEntry type="module" module-name="nyx.adapterpattern" />
     <orderEntry type="module" module-name="nyx.builderpattern" />
     <orderEntry type="module" module-name="wwz.iteratorpattern" />
-    <orderEntry type="module" module-name="lz.strategypattern" />
     <orderEntry type="module" module-name="ccd.singletonpattern" />
-    <orderEntry type="module" module-name="lz.templatemethodpattern" />
     <orderEntry type="module" module-name="wwz.chainofresponsibilitypattern" />
     <orderEntry type="module" module-name="ccd.factorypattern" />
     <orderEntry type="module" module-name="zlf.compositeentitypattern" />
@@ -31,7 +29,6 @@
     <orderEntry type="module" module-name="zlf.daopattern" />
     <orderEntry type="module" module-name="sjg.flyweightpattern" />
     <orderEntry type="module" module-name="nyx.prototypepattern" />
-    <orderEntry type="module" module-name="lz.observerpattern" />
     <orderEntry type="module" module-name="wwz.commandpattern" />
     <orderEntry type="module" module-name="softwarearch5" />
     <orderEntry type="module" module-name="zlf.interpreterpattern" />
@@ -46,7 +43,6 @@
     <orderEntry type="module" module-name="sfz.decoratorpattern" />
     <orderEntry type="module" module-name="sfz.facadepattern" />
     <orderEntry type="module" module-name="sfz.proxypattern" />
-    <orderEntry type="module" module-name="lz.dataaccessobjectpattern" />
     <orderEntry type="module" module-name="wwz.fluentinterfacepattern" />
     <orderEntry type="module" module-name="wwz.converterpattern" />
     <orderEntry type="module" module-name="ccd.mvcpattern" />
@@ -60,5 +56,7 @@
     <orderEntry type="module" module-name="zlf.gamelooppattern" />
     <orderEntry type="module" module-name="zlf.monostatepattern" />
     <orderEntry type="module" module-name="lz.servicelocatorpattern" />
+    <orderEntry type="module" module-name="wwz.templatemethodpattern" />
+    <orderEntry type="module" module-name="wwz.observerpattern" />
   </component>
 </module>

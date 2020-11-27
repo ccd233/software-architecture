@@ -32,6 +32,8 @@ module all.allpattern {
     requires wwz.iteratorpattern;
     requires wwz.fluentinterfacepattern;
     requires wwz.converterpattern;
+    requires wwz.templatemethodpattern;
+    requires wwz.observerpattern;
 
     requires nyx.adapterpattern;
     requires nyx.builderpattern;
@@ -47,9 +49,6 @@ module all.allpattern {
     requires zlf.gamelooppattern;
     requires zlf.monostatepattern;
 
-    //requires lz.dataaccessobjectpattern;
-    requires lz.observerpattern;
-    requires lz.strategypattern;
-    requires lz.templatemethodpattern;
+
     requires lz.servicelocatorpattern;
 }
