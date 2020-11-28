@@ -60,7 +60,13 @@ public class MediatorPattern {
             PrintTool.print("Tourist Name:");
             Name = input.nextLine();
             PrintTool.print("Tourist Age:");
-            Age=Integer.parseInt(input.nextLine());
+            String AgeInt=input.nextLine();
+            try {
+                Age = Integer.parseInt(AgeInt);
+            } catch (NumberFormatException e) {
+                PrintTool.print("Please Input Number");
+                continue;
+            }
             PrintTool.print("Tourist Occupation:");
             Occupation=input.nextLine();
             if(Age<=0||Name==null||Occupation==null){

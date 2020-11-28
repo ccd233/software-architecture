@@ -39,7 +39,13 @@ public class Demo {
                 PrintTool.print("please enter the id:");
                 Scanner idInput = new Scanner(System.in);
                 String _id = idInput.next();
-                UUID id = UUID.fromString(_id);
+                UUID id;
+                try {
+                    id = UUID.fromString(_id);
+                }catch (IllegalArgumentException e) {
+                    PrintTool.print("请copy add后给出的ID");
+                    continue;
+                }
                 ClientVO queryClient = client.getClientById(id);
                 if (queryClient != null) {
                     PrintTool.print("searched successfully");
@@ -59,7 +65,13 @@ public class Demo {
                 PrintTool.print("please enter the id:");
                 Scanner idInput = new Scanner(System.in);
                 String _id = idInput.next();
-                UUID id = UUID.fromString(_id);
+                UUID id;
+                try {
+                    id = UUID.fromString(_id);
+                }catch (IllegalArgumentException e) {
+                    PrintTool.print("请copy add后给出的ID");
+                    continue;
+                }
                 ClientVO deleteClient = client.deleteClientById(id);
                 if (deleteClient != null){
                     PrintTool.print("deleted successfully");
@@ -78,7 +90,13 @@ public class Demo {
                 PrintTool.print("please enter the id:");
                 Scanner idInput = new Scanner(System.in);
                 String _id = idInput.next();
-                UUID id = UUID.fromString(_id);
+                UUID id;
+                try {
+                    id = UUID.fromString(_id);
+                }catch (IllegalArgumentException e) {
+                    PrintTool.print("请copy add后给出的ID");
+                    continue;
+                }
                 PrintTool.print("please enter the new name:");
                 Scanner nameInput = new Scanner(System.in);
                 String name = nameInput.next();

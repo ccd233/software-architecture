@@ -42,11 +42,12 @@ public class DaoPattern {
                     }
                     PrintTool.print("Tourist Age:");
                     String AgeString=input.nextLine();
-                    if(AgeString.isEmpty()){
-                        PrintTool.print("Invalid input");
+                    try {
+                        Age = Integer.parseInt(AgeString);
+                    } catch (NumberFormatException e) {
+                        PrintTool.print("Please Input Number");
                         continue;
                     }
-                    Age = Integer.parseInt(AgeString);
                     PrintTool.print("Tourist Occupation:");
                     Occupation = input.nextLine();
                     if(Occupation.isEmpty()){

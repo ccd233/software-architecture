@@ -61,8 +61,10 @@ public class InterpreterPattern {
             }
             PrintTool.print("Tourist Age:");
             String AgeInt=input.nextLine();
-            if(AgeInt.isEmpty()){
-                PrintTool.print("Invalid input");
+            try {
+                Age = Integer.parseInt(AgeInt);
+            } catch (NumberFormatException e) {
+                PrintTool.print("Please Input Number");
                 continue;
             }
             Age=Integer.parseInt(AgeInt);

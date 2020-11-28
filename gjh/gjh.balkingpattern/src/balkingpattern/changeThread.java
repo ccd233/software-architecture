@@ -1,4 +1,6 @@
 package balkingpattern;
+import tools.PrintTool;
+
 import java.util.Random;
 /**
  * @Author Guan Jinghui
@@ -42,5 +44,7 @@ public class changeThread extends Thread{
                 e.printStackTrace();
             }
         }
+        //运行完毕后提示用户进行下一步操作
+        PrintTool.print("Please enter a command(0 exit，1 start)");
     }
 }

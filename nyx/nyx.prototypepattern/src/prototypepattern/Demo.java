@@ -28,10 +28,25 @@ public class Demo {
                 String type = typeInput.next();
                 PrintTool.print("please type in the shark weight(ponds):");
                 Scanner weightInput = new Scanner(System.in);
-                int weight = weightInput.nextInt();
+                String weightString=weightInput.nextLine();
+                int weight;
+                try {
+                    weight = Integer.parseInt(weightString);
+                } catch (NumberFormatException e) {
+                    PrintTool.print("Please Input Number");
+                    continue;
+                }
+
                 PrintTool.print("please type in the shark year:");
                 Scanner yearInput = new Scanner(System.in);
-                int year = yearInput.nextInt();
+                String yearString=yearInput.nextLine();
+                int year;
+                try {
+                    year = Integer.parseInt(yearString);
+                } catch (NumberFormatException e) {
+                    PrintTool.print("Please Input Number");
+                    continue;
+                }
                 FishDirector director = new FishDirector();
                 Shark shark = director.createShark(color, type, weight, year);
                 fishes.add(shark);
@@ -55,10 +70,25 @@ public class Demo {
                 String type = typeInput.next();
                 PrintTool.print("please type in the whale weight(ponds):");
                 Scanner weightInput = new Scanner(System.in);
-                int weight = weightInput.nextInt();
-                PrintTool.print("please type in the whale years:");
+                String weightString=weightInput.nextLine();
+                int weight;
+                try {
+                    weight = Integer.parseInt(weightString);
+                } catch (NumberFormatException e) {
+                    PrintTool.print("Please Input Number");
+                    continue;
+                }
+
+                PrintTool.print("please type in the whale year:");
                 Scanner yearInput = new Scanner(System.in);
-                int year = yearInput.nextInt();
+                String yearString=yearInput.nextLine();
+                int year;
+                try {
+                    year = Integer.parseInt(yearString);
+                } catch (NumberFormatException e) {
+                    PrintTool.print("Please Input Number");
+                    continue;
+                }
                 FishDirector director = new FishDirector();
                 Whale whale = director.createWhale(color, type, weight, year);
                 fishes.add(whale);
@@ -82,10 +112,25 @@ public class Demo {
                 String type = typeInput.next();
                 PrintTool.print("please type in the turtle weight(ponds):");
                 Scanner weightInput = new Scanner(System.in);
-                int weight = weightInput.nextInt();
-                PrintTool.print("please type in the turtle years:");
+                String weightString=weightInput.nextLine();
+                int weight;
+                try {
+                    weight = Integer.parseInt(weightString);
+                } catch (NumberFormatException e) {
+                    PrintTool.print("Please Input Number");
+                    continue;
+                }
+
+                PrintTool.print("please type in the turtle year:");
                 Scanner yearInput = new Scanner(System.in);
-                int year = yearInput.nextInt();
+                String yearString=yearInput.nextLine();
+                int year;
+                try {
+                    year = Integer.parseInt(yearString);
+                } catch (NumberFormatException e) {
+                    PrintTool.print("Please Input Number");
+                    continue;
+                }
                 FishDirector director = new FishDirector();
                 Turtle turtle = director.createTurtle(color, type, weight, year);
                 fishes.add(turtle);

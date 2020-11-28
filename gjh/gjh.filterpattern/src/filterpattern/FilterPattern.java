@@ -53,7 +53,13 @@ public class FilterPattern {
 	        	String name = scan.next();
 	        	PrintTool.print("Please enter the age：");
 	        	String age_string = scan.next();
-				int age=Integer.parseInt(age_string);
+				int age=0;
+				try {
+					age=Integer.parseInt(age_string);
+				} catch (NumberFormatException e) {
+					PrintTool.print("求求你输数字吧");
+					continue;
+				}
 	        	PrintTool.print("Please enter the status(VISITOR or STAFF)：");
 	        	String type = scan.next();
 	        	persons.add(new Person(name, age, type));

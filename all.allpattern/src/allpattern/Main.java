@@ -11,7 +11,6 @@ import commandpattern.CommandPattern;
 import compositeentitypattern.CompositeEntityPattern;
 import compositepattern.CompositePattern;
 import converterpattern.ConverterPattern;
-import daopattern.DaoPattern;
 import dataaccessobjectpattern.DataAccessObjectPattern;
 import databuspattern.DataBusPattern;
 import decoratortry.DecoratorPattern;
@@ -50,7 +49,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-
+/**
+ * @Author Chi Chengdao
+ * @Description: a tool class helps to add info before logs
+ * @Date: Created in 20:12 2020/11/4
+ * @Modified By: Wang Wenzheng
+ **/
 public class Main {
     private final int patternNumber;
     private final List<Runnable> patternsFunc;
@@ -72,7 +76,7 @@ public class Main {
         Main demo = new Main();
         demo.showHeadbar();
         demo.showPatterns();
-        System.out.println("!!!");
+        PrintTool.print("all done, thanks");
     }
 
     /**
@@ -110,7 +114,7 @@ public class Main {
         patternsFunc = new ArrayList<>();
         patternName = new ArrayList<>();
         //register patterns
-        //占位
+        //占位 且输入0结束程序
         registerPattern("exit", () -> PrintTool.print("exit"));
         //0
         registerPattern("AbstractFactoryPattern", AbstractFactoryPattern::work);
@@ -187,11 +191,18 @@ public class Main {
      * @Modified By:
      **/
     public void showHeadbar() {
-        System.out.println("请输入设计模式的代号运行相应设计模式的demo:");
+        System.out.println("all desgin patterns we learned and realized are as follow:");
+
         for (int i = 0; i <= patternNumber; i++) {
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             System.out.println(i + ":\t" + patternName.get(i));
         }
-        System.out.println("0: exit");
+        System.out.println("\nnumber before the pattern name means the code of the pattern.");
+        System.out.println("We make every pattern a interface for you to do the test conveniently.\n");
     }
 
     /**
@@ -207,8 +218,16 @@ public class Main {
      * @Modified By:
      **/
     public void showPatterns() {
+
         Scanner scan = new Scanner(System.in);
         while (true) {
+            //0.5s后提示用户输入，提升用户体验
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("Please input pattern's code to do the test(0 to exit):");
             String str = scan.next();
             int num = 0;
             try {

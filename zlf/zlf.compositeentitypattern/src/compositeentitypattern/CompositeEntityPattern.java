@@ -43,7 +43,13 @@ public class CompositeEntityPattern {
             PrintTool.print("Mother Name:");
             MotherName = input.nextLine();
             PrintTool.print("Child Num:");
-            ChildNum=Integer.parseInt(input.nextLine());
+            String NumString = input.nextLine();
+            try {
+                ChildNum = Integer.parseInt(NumString);
+            } catch (NumberFormatException e) {
+                PrintTool.print("Please Input Number");
+                continue;
+            }
             for(int i=0;i<ChildNum;i++){
                 PrintTool.print("Child Name:");
                 String ChildNameTemp = input.nextLine();

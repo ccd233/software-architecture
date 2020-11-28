@@ -49,18 +49,51 @@ public class VisitorPattern {
 	        	PrintTool.print("Please enter a name：");
 	        	String name = scan.next();
 	        	PrintTool.print("Please enter the workingHours：");
-	        	String workingHoursString = scan.next();
+				String workingHoursString=null;
+				int workingHours=0;
+				while (true) {
+					try {
+						workingHoursString = scan.next();
+						workingHours = Integer.parseInt(workingHoursString);
+						break;
+					} catch (NumberFormatException e) {
+						PrintTool.print("求求你输数字吧");
+						continue;
+					}
+				}
 				//int workingHours=Integer.parseInt(workingHoursString);
-	        	PrintTool.print("Please enter the salary：");
-	        	String salaryString = scan.next();
+				PrintTool.print("Please enter the salary：");
+				int salary=0;
+				String salaryString = null;
+				while (true) {
+					salaryString = scan.next();
+					try {
+						salary = Integer.parseInt(salaryString);
+						break;
+					} catch (NumberFormatException e) {
+						PrintTool.print("求求你输数字吧");
+						continue;
+					}
+				}
 				//int salary=Integer.parseInt(salaryString);
-	        	PrintTool.print("Please enter the length of absence：");
-	        	String absenceString = scan.next();
+				PrintTool.print("Please enter the length of absence：");
+				int absence=0;
+				String absenceString = null;
+				while (true) {
+					absenceString = scan.next();
+					try {
+						workingHours = Integer.parseInt(absenceString);
+						break;
+					} catch (NumberFormatException e) {
+						PrintTool.print("求求你输数字吧");
+						continue;
+					}
+				}
 				//int absence=Integer.parseInt(absenceString);
 				if(IfInt.isNumeric(workingHoursString)||IfInt.isNumeric(salaryString)||IfInt.isNumeric(absenceString)){
-					int workingHours=Integer.parseInt(workingHoursString);
-					int salary=Integer.parseInt(salaryString);
-					int absence=Integer.parseInt(absenceString);
+					workingHours=Integer.parseInt(workingHoursString);
+					salary=Integer.parseInt(salaryString);
+					absence=Integer.parseInt(absenceString);
 					Employee empl = new Manager(name, workingHours, salary, absence);
 					employeeList.add(empl);
 				}else {
@@ -72,18 +105,50 @@ public class VisitorPattern {
 				PrintTool.print("Please enter a name：");
 				String name = scan.next();
 				PrintTool.print("Please enter the workingHours：");
-				String workingHoursString = scan.next();
+				String workingHoursString=null;
+				int workingHours=0;
+				while (true) {
+					try {
+						workingHoursString = scan.next();
+						workingHours = Integer.parseInt(workingHoursString);
+						break;
+					} catch (NumberFormatException e) {
+						PrintTool.print("求求你输数字吧");
+						continue;
+					}
+				}
 				//int workingHours=Integer.parseInt(workingHoursString);
 				PrintTool.print("Please enter the salary：");
-				String salaryString = scan.next();
+				int salary=0;
+				String salaryString = null;
+				while (true) {
+					salaryString = scan.next();
+					try {
+						salary = Integer.parseInt(salaryString);
+						break;
+					} catch (NumberFormatException e) {
+						PrintTool.print("求求你输数字吧");
+						continue;
+					}
+				}
 				//int salary=Integer.parseInt(salaryString);
 				PrintTool.print("Please enter the length of absence：");
-				String absenceString = scan.next();
-				//int absence=Integer.parseInt(absenceString);
+				int absence=0;
+				String absenceString = null;
+				while (true) {
+					absenceString = scan.next();
+					try {
+						workingHours = Integer.parseInt(absenceString);
+						break;
+					} catch (NumberFormatException e) {
+						PrintTool.print("求求你输数字吧");
+						continue;
+					}
+				}
 				if(IfInt.isNumeric(workingHoursString)||IfInt.isNumeric(salaryString)||IfInt.isNumeric(absenceString)){
-					int workingHours=Integer.parseInt(workingHoursString);
-					int salary=Integer.parseInt(salaryString);
-					int absence=Integer.parseInt(absenceString);
+					workingHours=Integer.parseInt(workingHoursString);
+					salary=Integer.parseInt(salaryString);
+					absence=Integer.parseInt(absenceString);
 					Employee empl = new Worker(name, workingHours, salary, absence);
 					employeeList.add(empl);
 				}else {

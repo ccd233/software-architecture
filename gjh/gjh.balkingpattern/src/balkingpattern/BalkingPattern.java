@@ -15,8 +15,8 @@ public class BalkingPattern {
         String filename=scan.next();
         Data data = new Data(filename, false, " ");
 
+        PrintTool.print("Please enter a command(0 exit，1 start)");
         while(true){
-            PrintTool.print("Please enter a command(0 exit，1 start)");
             String str=scan.next();
             //input.add(str);
             if(str.equals("0")) {
@@ -25,8 +25,18 @@ public class BalkingPattern {
             }
             else if(str.equals("1")){
                 PrintTool.print("Please enter operating times:");
-                String times_string=scan.next();
-                int times=Integer.parseInt(times_string);
+                String timesString =scan.next();
+                int times=0;
+                try {
+                    times=Integer.parseInt(timesString );
+                } catch (NumberFormatException e) {
+                    PrintTool.print("求求你输数字吧");
+                    continue;
+                }
+                if (times==0) {
+                    PrintTool.print("请重新输入，times不能为0");
+                    continue;
+                }
                 new changeThread("CHANGE", data,times).start();
                 new saveThread("SAVE", data).start();
             }
