@@ -55,8 +55,9 @@
     <orderEntry type="module" module-name="nyx.modulepattern" />
     <orderEntry type="module" module-name="zlf.gamelooppattern" />
     <orderEntry type="module" module-name="zlf.monostatepattern" />
-    <orderEntry type="module" module-name="lz.servicelocatorpattern" />
     <orderEntry type="module" module-name="wwz.templatemethodpattern" />
     <orderEntry type="module" module-name="wwz.observerpattern" />
+    <orderEntry type="module" module-name="wwz.databuspattern" />
+    <orderEntry type="module" module-name="sfz.strategypattern" />
   </component>
 </module>

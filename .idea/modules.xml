@@ -14,7 +14,6 @@
       <module fileurl="file://$PROJECT_DIR$/gjh/gjh.mementopattern/gjh.mementopattern.iml" filepath="$PROJECT_DIR$/gjh/gjh.mementopattern/gjh.mementopattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/gjh/gjh.statepattern/gjh.statepattern.iml" filepath="$PROJECT_DIR$/gjh/gjh.statepattern/gjh.statepattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/gjh/gjh.visitorpattern/gjh.visitorpattern.iml" filepath="$PROJECT_DIR$/gjh/gjh.visitorpattern/gjh.visitorpattern.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lz/lz.servicelocatorpattern/lz.servicelocatorpattern.iml" filepath="$PROJECT_DIR$/lz/lz.servicelocatorpattern/lz.servicelocatorpattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/nyx/nyx.adapterpattern/nyx.adapterpattern.iml" filepath="$PROJECT_DIR$/nyx/nyx.adapterpattern/nyx.adapterpattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/nyx/nyx.builderpattern/nyx.builderpattern.iml" filepath="$PROJECT_DIR$/nyx/nyx.builderpattern/nyx.builderpattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/nyx/nyx.delegationpattern/nyx.delegationpattern.iml" filepath="$PROJECT_DIR$/nyx/nyx.delegationpattern/nyx.delegationpattern.iml" />
@@ -26,6 +25,7 @@
       <module fileurl="file://$PROJECT_DIR$/sfz/sfz.facadepattern/sfz.facadepattern.iml" filepath="$PROJECT_DIR$/sfz/sfz.facadepattern/sfz.facadepattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/sfz/sfz.proxypattern/sfz.proxypattern.iml" filepath="$PROJECT_DIR$/sfz/sfz.proxypattern/sfz.proxypattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/sfz/sfz.servantpattern/sfz.servantpattern.iml" filepath="$PROJECT_DIR$/sfz/sfz.servantpattern/sfz.servantpattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sfz/sfz.strategypattern/sfz.strategypattern.iml" filepath="$PROJECT_DIR$/sfz/sfz.strategypattern/sfz.strategypattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/sfz/sfz.typeobjectpattern/sfz.typeobjectpattern.iml" filepath="$PROJECT_DIR$/sfz/sfz.typeobjectpattern/sfz.typeobjectpattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/sjg/sjg.bridgepattern/sjg.bridgepattern.iml" filepath="$PROJECT_DIR$/sjg/sjg.bridgepattern/sjg.bridgepattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/sjg/sjg.compositepattern/sjg.compositepattern.iml" filepath="$PROJECT_DIR$/sjg/sjg.compositepattern/sjg.compositepattern.iml" />
@@ -45,6 +45,7 @@
       <module fileurl="file://$PROJECT_DIR$/wwz/wwz.chainofresponsibilitypattern/wwz.chainofresponsibilitypattern.iml" filepath="$PROJECT_DIR$/wwz/wwz.chainofresponsibilitypattern/wwz.chainofresponsibilitypattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/wwz/wwz.commandpattern/wwz.commandpattern.iml" filepath="$PROJECT_DIR$/wwz/wwz.commandpattern/wwz.commandpattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/wwz/wwz.converterpattern/wwz.converterpattern.iml" filepath="$PROJECT_DIR$/wwz/wwz.converterpattern/wwz.converterpattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wwz/wwz.databuspattern/wwz.databuspattern.iml" filepath="$PROJECT_DIR$/wwz/wwz.databuspattern/wwz.databuspattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/wwz/wwz.fluentinterfacepattern/wwz.fluentinterfacepattern.iml" filepath="$PROJECT_DIR$/wwz/wwz.fluentinterfacepattern/wwz.fluentinterfacepattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/wwz/wwz.iteratorpattern/wwz.iteratorpattern.iml" filepath="$PROJECT_DIR$/wwz/wwz.iteratorpattern/wwz.iteratorpattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/wwz/wwz.observerpattern/wwz.observerpattern.iml" filepath="$PROJECT_DIR$/wwz/wwz.observerpattern/wwz.observerpattern.iml" />

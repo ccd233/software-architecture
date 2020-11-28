@@ -18,6 +18,7 @@ module all.allpattern {
     requires sfz.ProxyPattern;
     requires sfz.servantpattern;
     requires sfz.typeobjectpattern;
+    requires sfz.strategypattern;
 
     requires sjg.bridgepattern;
     requires sjg.compositepattern;
@@ -34,6 +35,7 @@ module all.allpattern {
     requires wwz.converterpattern;
     requires wwz.templatemethodpattern;
     requires wwz.observerpattern;
+    requires wwz.databuspattern;
 
     requires nyx.adapterpattern;
     requires nyx.builderpattern;
@@ -50,5 +52,4 @@ module all.allpattern {
     requires zlf.monostatepattern;
 
 
-    requires lz.servicelocatorpattern;
 }

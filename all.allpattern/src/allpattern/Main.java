@@ -13,6 +13,7 @@ import compositepattern.CompositePattern;
 import converterpattern.ConverterPattern;
 import daopattern.DaoPattern;
 import dataaccessobjectpattern.DataAccessObjectPattern;
+import databuspattern.DataBusPattern;
 import decoratortry.DecoratorPattern;
 import delegationpattern.DelegationPattern;
 import doublecheckedlockingpattern.DoubleCheckedLockingPattern;
@@ -36,9 +37,9 @@ import observerattern.ObserverPattern;
 import prototypepattern.PrototypePattern;
 import proxytry.ProxyPattern;
 import serventpattern.ServantPattern;
-import servicelocatorpattern.ServiceLocatorPattern;
 import singletonpattern.SingletonPattern;
 import statepattern.StatePattern;
+import strategypattern.StrategyPattern;
 import templatemethodpattern.TemplateMethodPattern;
 import tools.PrintTool;
 import transferobjectpattern.TransferObjectPattern;
@@ -113,8 +114,8 @@ public class Main {
         registerPattern("DAOPattern", () -> System.out.println("!"));
         registerPattern("ObserverPattern", ObserverPattern::observerPattern);
 
-        //registerPattern("StrategyPattern", StrategyPattern::work);
-        registerPattern("TemplateMethodPattern", TemplateMethodPattern::templeteMethod);
+        registerPattern("StrategyPattern", StrategyPattern::strategy);
+        registerPattern("TemplateMethodPattern", TemplateMethodPattern::templateMethod);
         //12
         registerPattern("AdapterPattern", AdapterPattern::work);
         registerPattern("BuilderPattern", BuilderPattern::work);
@@ -148,7 +149,7 @@ public class Main {
         registerPattern("InterceptingFilterPattern", InterceptingFilterPattern::work);
         //36
         registerPattern("BalkingPattern", BalkingPattern::work);
-        registerPattern("ServiceLocatorPattern", ServiceLocatorPattern::work);
+        registerPattern("DataBusPattern", DataBusPattern::dataBus);
         registerPattern("DelegationPattern", DelegationPattern::delegationPattern);
         registerPattern("ModulePattern", ModulePattern::modulePattern);
         //40

@@ -24,7 +24,7 @@ public class TemplateMethodPattern {
      * @Date: 1:01 2020/11/28
      * @Modified By:
     **/
-    public static void templeteMethod(){
+    public static void templateMethod(){
         PrintTool.print("here are some good shows in the carnival, and they are going to start!");
 
         PrintTool.print("comedy is going to show");
