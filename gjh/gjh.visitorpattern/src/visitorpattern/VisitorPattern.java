@@ -8,9 +8,17 @@ import tools.IfInt;
 import visitorpattern.element.*;
 import visitorpattern.visitor.*;
 import tools.PrintTool;
-
+/**
+ * @Author Guan Jinghui
+ * @Description:
+ * @Date: Created in 11:45 下午 2020/11/27
+ * @Modified By:
+ **/
 public class VisitorPattern {
-	
+
+	/**
+	 * 基本的演示类，运行后输入数字代表命令
+	 */
 	public void visitorPattern() {
 		List<Employee> employeeList = new ArrayList<Employee>();
 		//经理1
@@ -30,23 +38,23 @@ public class VisitorPattern {
 		Scanner scan = new Scanner(System.in);
 		while(true) {
 			PrintTool.print("");
-			System.out.println("Please enter a command(0 exit, 1 add a manager, "
+			PrintTool.print("Please enter a command(0 exit, 1 add a manager, "
 					+ "2 add a worker, 3 Financial statements, 4 Human resourcesstatements)");
 			String str=scan.next();
 	        if(str.equals("0")) {
-	        	System.out.println("close");
+	        	PrintTool.print("close");
 	            break;
 	        }
 	        else if(str.equals("1")) {
-	        	System.out.println("Please enter a name：");
+	        	PrintTool.print("Please enter a name：");
 	        	String name = scan.next();
-	        	System.out.println("Please enter the workingHours：");
+	        	PrintTool.print("Please enter the workingHours：");
 	        	String workingHoursString = scan.next();
 				//int workingHours=Integer.parseInt(workingHoursString);
-	        	System.out.println("Please enter the salary：");
+	        	PrintTool.print("Please enter the salary：");
 	        	String salaryString = scan.next();
 				//int salary=Integer.parseInt(salaryString);
-	        	System.out.println("Please enter the length of absence：");
+	        	PrintTool.print("Please enter the length of absence：");
 	        	String absenceString = scan.next();
 				//int absence=Integer.parseInt(absenceString);
 				if(IfInt.isNumeric(workingHoursString)||IfInt.isNumeric(salaryString)||IfInt.isNumeric(absenceString)){
@@ -56,20 +64,20 @@ public class VisitorPattern {
 					Employee empl = new Manager(name, workingHours, salary, absence);
 					employeeList.add(empl);
 				}else {
-					System.out.println("Please enter the correct info：");
+					PrintTool.print("Please enter the correct info：");
 				}
 
 	        }
 	        else if(str.equals("2")) {
-				System.out.println("Please enter a name：");
+				PrintTool.print("Please enter a name：");
 				String name = scan.next();
-				System.out.println("Please enter the workingHours：");
+				PrintTool.print("Please enter the workingHours：");
 				String workingHoursString = scan.next();
 				//int workingHours=Integer.parseInt(workingHoursString);
-				System.out.println("Please enter the salary：");
+				PrintTool.print("Please enter the salary：");
 				String salaryString = scan.next();
 				//int salary=Integer.parseInt(salaryString);
-				System.out.println("Please enter the length of absence：");
+				PrintTool.print("Please enter the length of absence：");
 				String absenceString = scan.next();
 				//int absence=Integer.parseInt(absenceString);
 				if(IfInt.isNumeric(workingHoursString)||IfInt.isNumeric(salaryString)||IfInt.isNumeric(absenceString)){
@@ -79,7 +87,7 @@ public class VisitorPattern {
 					Employee empl = new Worker(name, workingHours, salary, absence);
 					employeeList.add(empl);
 				}else {
-					System.out.println("Please enter the correct info：");
+					PrintTool.print("Please enter the correct info：");
 				}
 	        }
 	        else if(str.equals("3")){
@@ -95,11 +103,14 @@ public class VisitorPattern {
 	    		}	
 	        }
 	        else {
-				System.out.println("Input Error");
+				PrintTool.print("Input Error");
 			}
 		}
 	}
-	
+
+	/**
+	 * 接口函数
+	 */
 	public static void work() {
 		VisitorPattern demo = new VisitorPattern();
 		demo.visitorPattern();

@@ -39,7 +39,6 @@
     <orderEntry type="module" module-name="gjh.mementopattern" />
     <orderEntry type="module" module-name="gjh.statepattern" />
     <orderEntry type="module" module-name="gjh.visitorpattern" />
-    <orderEntry type="module" module-name="sfz.dataaccessobjectpattern" />
     <orderEntry type="module" module-name="sfz.decoratorpattern" />
     <orderEntry type="module" module-name="sfz.facadepattern" />
     <orderEntry type="module" module-name="sfz.proxypattern" />
@@ -59,5 +58,6 @@
     <orderEntry type="module" module-name="wwz.observerpattern" />
     <orderEntry type="module" module-name="wwz.databuspattern" />
     <orderEntry type="module" module-name="sfz.strategypattern" />
+    <orderEntry type="module" module-name="sfz.dataaccessobjectpattern" />
   </component>
 </module>

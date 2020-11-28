@@ -2,7 +2,7 @@ package prototypepattern;
 
 /**
  * @Author Nie Yixin
- * @Description: woman builder implements builder
+ * @Description: Whale实体类
  * @Date: Created in 10:22 2020/11/13
  * @Modified By:
  **/
@@ -25,7 +25,20 @@ public class Whale extends Fish {
             this.year = target.year;
         }
     }
-
+    /***
+     * @Author: Nie Yixin
+     * @Description: clone
+     *
+     * @Param Type
+     *
+     *
+     * @Return Value
+     * @return: Whale object
+     * @resume:
+     *
+     * @Date:
+     * @Modified By:
+     **/
     @Override
     public Fish clone() {
 

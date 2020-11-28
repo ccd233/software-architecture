@@ -1,5 +1,7 @@
 package daopattern;
 
+import tools.PrintTool;
+
 import java.util.List;
 import java.util.Scanner;
 
@@ -11,18 +13,20 @@ import java.util.Scanner;
  **/
 public class DaoPattern {
     private TouristDao TouristStatistics=new TouristDao();
+    //The scene that a tourist comes.
     public void TouristVisiting(Tourist Visitor){
         if(Visitor==null){
-            System.out.println("The input is null.\nplease check your input and try again.\n");
+            PrintTool.print("The input is null.\nplease check your input and try again.\n");
             return;
         }
-        System.out.println("Vistor:"+Visitor.GetName()+" comes.");
+        PrintTool.print("Vistor:"+Visitor.GetName()+" comes.");
         TouristStatistics.AddObject(Visitor);
     }
+    //interface
     public static void work(){
         Scanner input = new Scanner(System.in);
         while(true) {
-            System.out.println("1.add 2.delete 3.print");
+            PrintTool.print("1.add 2.delete 3.print 4.quit");
             String command=null;
             command=input.nextLine();
             if(command.equals("add")) {
@@ -30,25 +34,39 @@ public class DaoPattern {
                 int Age = -1;
                 String Occupation = null;
                 while (Age <= 0 || Name == null || Occupation == null) {
-                    System.out.println("Tourist Name:");
+                    PrintTool.print("Tourist Name:");
                     Name = input.nextLine();
-                    System.out.println("Tourist Age:");
-                    Age = Integer.parseInt(input.nextLine());
-                    System.out.println("Tourist Occupation:");
+                    if(Name.isEmpty()){
+                        PrintTool.print("Invalid input");
+                        continue;
+                    }
+                    PrintTool.print("Tourist Age:");
+                    String AgeString=input.nextLine();
+                    if(AgeString.isEmpty()){
+                        PrintTool.print("Invalid input");
+                        continue;
+                    }
+                    Age = Integer.parseInt(AgeString);
+                    PrintTool.print("Tourist Occupation:");
                     Occupation = input.nextLine();
-                    if (Age <= 0 || Name == null || Occupation == null) {
-                        System.out.println("Invalid Input.Please check again.\n");
+                    if(Occupation.isEmpty()){
+                        PrintTool.print("Invalid input");
+                        continue;
                     }
                 }
                 Tourist Visitor = new Tourist(Name, Age, Occupation);
                 TouristDao TouristInf = TouristDao.GetInstance();
                 TouristInf.AddObject(Visitor);
             } else if(command.equals("delete")){
-                System.out.println("Tourist Name:");
+                PrintTool.print("Tourist Name:");
                 String Name = null;
                 Name = input.nextLine();
                 TouristDao TouristInf = TouristDao.GetInstance();
                 List<Integer> SearchList=TouristInf.SearchByName(Name);
+                if(SearchList.isEmpty()){
+                    PrintTool.print("Tourist not found.");
+                    continue;
+                }
                 for(int index:SearchList){
                     TouristInf.DeleteObject(index);
                 }
@@ -56,10 +74,12 @@ public class DaoPattern {
                 TouristDao TouristInf = TouristDao.GetInstance();
                 List<Tourist> TotalList=TouristInf.GetAllObject();
                 for(Tourist tourist:TotalList){
-                    System.out.println(tourist.GetName()+"\n");
+                    PrintTool.print(tourist.GetName()+"\n");
                 }
+            } else if(command.equals("quit")){
+                break;
             } else{
-                System.out.println("Invalid Command\n");
+                PrintTool.print("Invalid Command\n");
             }
         }
     }

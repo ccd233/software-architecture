@@ -11,18 +11,18 @@ import java.util.List;
 public class FilterChain {
     private List<Filter> filters = new ArrayList<Filter>();
     private Customer customer;
-
+    //添加filter
     public void addFilter(Filter filter){
         filters.add(filter);
     }
-
+    //执行filter的work
     public void execute(String request){
         for (Filter filter : filters) {
             filter.work(request);
         }
         customer.eat(request);
     }
-
+    //添加customer
     public void setCustomer(Customer customer){
         this.customer = customer;
     }

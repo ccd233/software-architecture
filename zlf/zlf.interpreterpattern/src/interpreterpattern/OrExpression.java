@@ -42,7 +42,8 @@ public class OrExpression implements Expression{
      * @Date:  2020/11/17
      * @Modified By: 
     **/
-    
+
+    //interpret method
     public boolean interpret(String info){
         return exp1.interpret(info)|| exp2.interpret(info);
     }

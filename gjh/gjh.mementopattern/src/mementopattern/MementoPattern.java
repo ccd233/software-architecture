@@ -6,8 +6,19 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import tools.PrintTool;
+/**
+ * @Author Guan Jinghui
+ * @Description:
+ * @Date: Created in 11:42 下午 2020/11/27
+ * @Modified By:
+ **/
 public class MementoPattern {
-	
+
+	/**
+	 * 基本的演示类，运行后输入数字代表命令
+	 * @return
+	 */
 	public void memento_pattern() {
 		Originator originator = new Originator();
         Caretaker caretaker = new Caretaker(originator);
@@ -36,31 +47,31 @@ public class MementoPattern {
         
         Scanner scan = new Scanner(System.in);
 		while(true) {
-			System.out.println("Please enter a command(0 exit, 1 add lighting state, "
+			PrintTool.print("Please enter a command(0 exit, 1 add lighting state, "
 					+ "2 redo, 3 List all states)");
 			String str=scan.next();
 	        if(str.equals("0")) {
-	        	System.out.println("close");
+	        	PrintTool.print("close");
 	            break;
 	        }
 	        else if(str.equals("1")) {
-	        	System.out.println("Please enter the number of lighting type");
+	        	PrintTool.print("Please enter the number of lighting type");
 	        	String number = scan.next();
 				if(numberCount.contains(number)){
-					System.out.println("State is already stated");
+					PrintTool.print("State is already stated");
 				}
 	        	originator.setState("State Lighting state " + number);
 	            caretaker.createMemento();
 	        }
 	        else if(str.equals("2")) {
-	        	System.out.println("Which state do you want to return to:");
+	        	PrintTool.print("Which state do you want to return to:");
 	        	String stateNumberString = scan.next();
 	        	if(numberCount.contains(stateNumberString)){
 					int stateNumber=Integer.parseInt(stateNumberString);
 					caretaker.restoreMemento(stateNumber - 1);
 				}
 	        	else{
-					System.out.println("Input Error, State isn't found");
+					PrintTool.print("Input Error, State isn't found");
 				}
 
 	        }
@@ -68,11 +79,14 @@ public class MementoPattern {
 	        	originator.pringStates();
 	        }
 	        else{
-				System.out.println("Input Error");
+				PrintTool.print("Input Error");
 			}
 		}
 	}
-	
+
+	/**
+	 * 接口函数
+	 */
 	public static void work() {
 		MementoPattern demo = new MementoPattern();
 		demo.memento_pattern();

@@ -8,11 +8,11 @@ package interceptingfilterpattern;
  **/
 public class Order {
     FilterManager filterManager;
-
+    //创建
     public void setFilterManager(FilterManager filterManager){
         this.filterManager = filterManager;
     }
-
+    //把request在filterchain中传递
     public void sendRequest(String request){
         filterManager.filterRequest(request);
     }

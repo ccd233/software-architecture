@@ -11,6 +11,21 @@ import tools.PrintTool;
 public abstract class GuideMan{
     private final String name;
     private GuideMan nextGuideMan;
+    /**
+     * @Author: Wang Wenzheng
+     * @Description: 构造函数
+     *
+     * @Param Type
+     * param: name
+     * resume: 向导名
+     *
+     * @Return Value
+     * @return:
+     * @resume:
+     *
+     * @Date: 18:22 2020/11/28
+     * @Modified By:
+     **/
     public GuideMan(String name){
         this.name=name;
     }

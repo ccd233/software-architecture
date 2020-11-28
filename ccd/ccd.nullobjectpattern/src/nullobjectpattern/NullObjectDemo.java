@@ -6,6 +6,7 @@ import tools.PrintTool;
  **/
 
 public class NullObjectDemo {
+    //空对象模式演示接口
     public static void work() {
         PrintTool.print("使用工厂依次创建不同的对象，可以看到所创建的对象是否是空对象\n"+
                 "\n Animals:");

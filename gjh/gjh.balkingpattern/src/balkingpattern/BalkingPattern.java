@@ -11,28 +11,27 @@ import tools.PrintTool;
 public class BalkingPattern {
     public static void work() {
         Scanner scan = new Scanner(System.in);
-        PrintTool.print("");
-        System.out.println("Please enter a filename");
+        PrintTool.print("Please enter a filename");
         String filename=scan.next();
         Data data = new Data(filename, false, " ");
 
         while(true){
-            System.out.println("Please enter a command(0 exit，1 start)");
+            PrintTool.print("Please enter a command(0 exit，1 start)");
             String str=scan.next();
             //input.add(str);
             if(str.equals("0")) {
-                System.out.println("close");
+                PrintTool.print("close");
                 break;
             }
             else if(str.equals("1")){
-                System.out.println("Please enter operating times:");
+                PrintTool.print("Please enter operating times:");
                 String times_string=scan.next();
                 int times=Integer.parseInt(times_string);
                 new changeThread("CHANGE", data,times).start();
                 new saveThread("SAVE", data).start();
             }
             else {
-                System.out.println("Input Error:");
+                PrintTool.print("Input Error:");
             }
         }
 

@@ -13,7 +13,7 @@ public class UI {
     }
     public void init() {
         JFrame frame = new JFrame("Fountain");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         JPanel context = new JPanel();
         context.setLayout(new BoxLayout(context, BoxLayout.Y_AXIS));
         frame.getContentPane().add(context);

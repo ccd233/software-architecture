@@ -53,6 +53,7 @@ public class EntertainmentFacilities {
      * @Modified By:
      **/
 
+    //Get Ticket By Facility Type
     public Ticket EntranceTicket(){
         Ticket TicketType=new Ticket(TicketPrice,this);
         return TicketType;
@@ -74,10 +75,12 @@ public class EntertainmentFacilities {
      * @Modified By:
      **/
 
+    //getter
     public String FacilityName(){
         return Name;
     }
 
+    //facility information serialization
     public String FacilityInformation(){
         return "Facility Name:"+Name+",Price:"+Integer.toString(TicketPrice);
     }

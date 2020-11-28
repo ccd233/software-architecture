@@ -3,6 +3,12 @@ package mementopattern.character;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @Author Guan Jinghui
+ * @Description:
+ * @Date: Created in 11:42 下午 2020/11/27
+ * @Modified By:
+ **/
 public class Memento {
 	private List<String> states;
     private int index;

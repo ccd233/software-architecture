@@ -7,9 +7,50 @@ package modulepattern;
  * @Modified By:
  **/
 public abstract class GetTicket {
+    /***
+     * @Author: Nie Yixin
+     * @Description: 买票
+     *
+     * @Param Type
+     *
+     *
+     * @Return Value
+     * @return: void
+     * @resume:
+     *
+     * @Date:
+     * @Modified By:
+    **/
     abstract void buyTicket();
+    /***
+     * @Author: Nie Yixin
+     * @Description: 取票
+     *
+     * @Param Type
+     *
+     *
+     * @Return Value
+     * @return: void
+     * @resume:
+     *
+     * @Date:
+     * @Modified By:
+    **/
     abstract void getTicket();
-
+    /***
+     * @Author: Nie Yixin
+     * @Description: 进园是固定的流程——买票，取票
+     *
+     * @Param Type
+     *
+     *
+     * @Return Value
+     * @return: void
+     * @resume:
+     *
+     * @Date:
+     * @Modified By:
+    **/
     public final void enterPark() {
         buyTicket();
         getTicket();

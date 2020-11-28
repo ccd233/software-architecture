@@ -27,9 +27,9 @@ public class DecoratorPattern {
     public static void decorator() {
         PrintTool.print("Decorator Pattern" + "\n" +
                 "Scenario Introduction:This is a balloon carnival." + "\n" +
-                "The theme of this carnival can be changed or superposed." + "\n" +
-                "With this decorator pattern,the user can create as many themes as he likes" + "\n" +
-                "By using the different theme class,it's really convenient to alter or superposed the theme." + "\n");
+                "The element of this carnival can be changed,superposed or add." + "\n" +
+                "With this decorator pattern,the user can create as many elements as he likes" + "\n" +
+                "By using the different element class,it's really convenient to alter,superposed or add the theme." + "\n");
 
         String info = "This is a great activity in which you could play with numerous balloons.Enjoy yourselves!";
         AbstractRecreationalActivity a1 = new BalloonCarnival(20, 100, info);

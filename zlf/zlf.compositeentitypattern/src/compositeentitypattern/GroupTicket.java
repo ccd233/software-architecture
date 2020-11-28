@@ -35,6 +35,8 @@ public class GroupTicket extends Ticket{
         GroupMember=_GroupMember;
     }
 
+    //Group Ticket Information
+    //return Ticket information and Family Information
     public String GroupTicketInf(){
         String TicketInf= GroupName;
         TicketInf = TicketInf + "\nMemeber:";

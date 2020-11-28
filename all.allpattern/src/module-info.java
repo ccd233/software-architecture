@@ -6,19 +6,19 @@ module all.allpattern {
     requires ccd.mvcpattern;
     requires ccd.interceptingfilterpattern;
 
-    requires gjh.filterPattern;
+    requires gjh.filterpattern;
     requires gjh.mementoPattern;
     requires gjh.statePattern;
     requires gjh.visitorPattern;
     requires gjh.balkingpattern;
 
-    requires sfz.DataAccessObjectPattern;
     requires sfz.DecoratorPattern;
     requires sfz.FacadePattern;
     requires sfz.ProxyPattern;
     requires sfz.servantpattern;
     requires sfz.typeobjectpattern;
     requires sfz.strategypattern;
+    requires sfz.dataaccessobjectpattern;
 
     requires sjg.bridgepattern;
     requires sjg.compositepattern;

@@ -5,6 +5,12 @@ import tools.PrintTool;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @Author Guan Jinghui
+ * @Description:
+ * @Date: Created in 11:42 下午 2020/11/27
+ * @Modified By:
+ **/
 public class Caretaker {
 	private Originator originator;
     private List<Memento> mementos = new ArrayList<>();
@@ -44,9 +50,9 @@ public class Caretaker {
     public void printAll() {
         PrintTool.print("");
         for (int i = 0; i < mementos.size(); i++) {
-            System.out.println("Stage lighting state i : " + i + " : " + mementos.get(i) 
+            PrintTool.print("Stage lighting state i : " + i + " : " + mementos.get(i)
             + " : " + mementos.get(i).getStates());
-            System.out.println("---------------------------------");
+            PrintTool.print("---------------------------------");
         }
     }
 

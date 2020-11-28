@@ -7,10 +7,12 @@ import tools.PrintTool;
 
 public class Shrimp implements Animal{
     @Override
+    //实现speak接口
     public void speak() {
         PrintTool.print("I am Shrimp!");
     }
     @Override
+    //实现show接口
     public void show() {
         PrintTool.print("Sorry, I am tasty, so you can eat me!");
     }

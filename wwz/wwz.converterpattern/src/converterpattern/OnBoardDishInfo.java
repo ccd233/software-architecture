@@ -33,21 +33,9 @@ public class OnBoardDishInfo {
         this.dishIntro = dishIntro;
     }
 
-    public String getDishName() {
-        return dishName;
-    }
-
-    public String getDishPrize() {
-        return dishPrize;
-    }
-
-    public String getDishIntro() {
-        return dishIntro;
-    }
-
     /**
      * @Author: Wang Wenzheng
-     * @Description: 按照格式打印菜单
+     * @Description: 获取菜品名
      *
      * @Param Type
      * param:
@@ -55,7 +43,64 @@ public class OnBoardDishInfo {
      *
      * @Return Value
      * @return: java.lang.String
-     * @resume:
+     * @resume: 菜品名
+     *
+     * @Date: 18:32 2020/11/28
+     * @Modified By:
+    **/
+    public String getDishName() {
+        return dishName;
+    }
+
+    /**
+     * @Author: Wang Wenzheng
+     * @Description: 获取菜品价格
+     *
+     * @Param Type
+     * param:
+     * resume:
+     *
+     * @Return Value
+     * @return: java.lang.String
+     * @resume: 菜品价格（以字符串形式保存，用于在菜单板上展示）
+     *
+     * @Date: 18:31 2020/11/28
+     * @Modified By:
+    **/
+    public String getDishPrize() {
+        return dishPrize;
+    }
+
+    /**
+     * @Author: Wang Wenzheng
+     * @Description: 获取菜品介绍
+     *
+     * @Param Type
+     * param:
+     * resume:
+     *
+     * @Return Value
+     * @return: java.lang.String
+     * @resume: 菜品介绍
+     *
+     * @Date: 18:31 2020/11/28
+     * @Modified By:
+    **/
+    public String getDishIntro() {
+        return dishIntro;
+    }
+
+    /**
+     * @Author: Wang Wenzheng
+     * @Description: 重写toString方法，按照格式打印菜单
+     *
+     * @Param Type
+     * param:
+     * resume:
+     *
+     * @Return Value
+     * @return: java.lang.String
+     * @resume: 返回被打印时输出的字符串
      *
      * @Date: 19:46 2020/11/25
      * @Modified By:

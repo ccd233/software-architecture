@@ -2,7 +2,7 @@ package prototypepattern;
 
 /**
  * @Author Nie Yixin
- * @Description:
+ * @Description: Shark实体类
  * @Date: Created in 10:19 2020/11/13
  * @Modified By:
  **/
@@ -25,7 +25,20 @@ public class Shark extends Fish {
             this.year = target.year;
         }
     }
-
+    /***
+     * @Author: Nie Yixin
+     * @Description: clone
+     *
+     * @Param Type
+     *
+     *
+     * @Return Value
+     * @return: Shark object
+     * @resume:
+     *
+     * @Date:
+     * @Modified By:
+     **/
     @Override
     public Fish clone() {
         return new Shark(this);

@@ -11,6 +11,21 @@ import tools.PrintTool;
 public class Dish {
     private String name;
 
+    /**
+     * @Author: Wang Wenzheng
+     * @Description: 构造函数
+     *
+     * @Param Type
+     * param: dish
+     * resume: 菜品名
+     *
+     * @Return Value
+     * @return:
+     * @resume:
+     *
+     * @Date: 18:24 2020/11/28
+     * @Modified By:
+     **/
     public Dish(String name) {
         this.name = name;
     }

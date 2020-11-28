@@ -1,5 +1,7 @@
 package modulepattern;
 
+import tools.PrintTool;
+
 /**
  * @Author Nie Yixin
  * @Description: two ways of get into the park
@@ -8,10 +10,10 @@ package modulepattern;
  **/
 public class ModulePattern {
     public static void modulePattern() {
-        System.out.println("The visitor buy ticket online:");
+        PrintTool.print("The visitor buy ticket online:");
         GetTicket visitor = new OnlineTicket();
         visitor.enterPark();
-        System.out.println("The visitor buy ticket in cash:");
+        PrintTool.print("The visitor buy ticket in cash:");
         visitor = new PaperTicket();
         visitor.enterPark();
     }

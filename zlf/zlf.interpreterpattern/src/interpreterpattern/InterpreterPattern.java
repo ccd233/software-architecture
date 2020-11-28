@@ -1,5 +1,7 @@
 package interpreterpattern;
 
+import tools.PrintTool;
+
 import java.util.Scanner;
 
 /**
@@ -9,6 +11,7 @@ import java.util.Scanner;
  * @Modified By:
  **/
 public class InterpreterPattern {
+    //expression to evaluate discount
     public static Expression DiscountExpression(){
         String[] DiscountSet1={"Student","Teacher","Soldier"};
         TerminalExpression DiscountExp1= new TerminalExpression(DiscountSet1);
@@ -37,30 +40,42 @@ public class InterpreterPattern {
      * @Modified By:
      **/
 
+    //check if a tourist enjoys discount by DiscountExpression()
     public static boolean checkDiscount(Tourist tourist){
         Expression ck=DiscountExpression();
         return ck.interpret(tourist.getInformation());
     }
 
+    //output interface
     public static void work(){
         String Name = null;
         int Age=-1;
         String Occupation=null;
         while(Age<=0||Name==null||Occupation==null){
             Scanner input = new Scanner(System.in);
-            System.out.println("Tourist Name:");
+            PrintTool.print("Tourist Name:");
             Name = input.nextLine();
-            System.out.println("Tourist Age:");
-            Age=Integer.parseInt(input.nextLine());
-            System.out.println("Tourist Occupation:");
+            if(Name.isEmpty()){
+                PrintTool.print("Invalid input");
+                continue;
+            }
+            PrintTool.print("Tourist Age:");
+            String AgeInt=input.nextLine();
+            if(AgeInt.isEmpty()){
+                PrintTool.print("Invalid input");
+                continue;
+            }
+            Age=Integer.parseInt(AgeInt);
+            PrintTool.print("Tourist Occupation:");
             Occupation=input.nextLine();
-            if(Age<=0||Name==null||Occupation==null){
-                System.out.println("Invalid Input.Please check again.\n");
+            if(Occupation.isEmpty()){
+                PrintTool.print("Invalid input");
+                continue;
             }
         }
         Tourist Visitor=new Tourist(Name,Age,Occupation);
         boolean IsDiscount = checkDiscount(Visitor);
-        if(IsDiscount) System.out.println(Visitor.GetName()+" enjoys discount.\n");
-        else System.out.println(Visitor.GetName()+" does not enjoy discount.\n");
+        if(IsDiscount) PrintTool.print(Visitor.GetName()+" enjoys discount.\n");
+        else PrintTool.print(Visitor.GetName()+" does not enjoy discount.\n");
     }
 }

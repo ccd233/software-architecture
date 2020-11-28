@@ -59,6 +59,9 @@ public class CompositeEntity {
      * @Modified By:
     **/
 
+    //Composite Entity Scene : GroupTicket
+    //Underwater World Carnival welcomes family tourists
+    //:) family enjoys discount
     public GroupTicket BuyGroupTicket(){
         List<Tourist> GroupMember=Child;
         GroupMember.add(Father);

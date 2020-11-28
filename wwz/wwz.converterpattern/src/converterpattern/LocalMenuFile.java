@@ -13,13 +13,59 @@ import java.util.List;
  **/
 public class LocalMenuFile {
     private List<LocalDishInfo> dishes;
+    /**
+     * @Author: Wang Wenzheng
+     * @Description: 构造函数
+     *
+     * @Param Type
+     * param:
+     * resume:
+     *
+     * @Return Value
+     * @return:
+     * @resume:
+     *
+     * @Date: 18:28 2020/11/28
+     * @Modified By:
+    **/
     LocalMenuFile(){
         dishes=new ArrayList<>();
     }
+    /**
+     * @Author: Wang Wenzheng
+     * @Description: 向dishes列表中添加菜单信息
+     *
+     * @Param Type
+     * param: info
+     * resume:
+     *
+     * @Return Value
+     * @return: converterpattern.LocalMenuFile
+     * @resume: 返回对象本身，实现流式接口
+     *
+     * @Date: 18:28 2020/11/28
+     * @Modified By:
+    **/
     public LocalMenuFile addDish(LocalDishInfo info){
         dishes.add(info);
         return this;
     }
+
+    /**
+     * @Author: Wang Wenzheng
+     * @Description: 获取dishes列表
+     *
+     * @Param Type
+     * param:
+     * resume:
+     *
+     * @Return Value
+     * @return: java.util.List<converterpattern.LocalDishInfo>
+     * @resume: dishes列表
+     *
+     * @Date: 18:30 2020/11/28
+     * @Modified By:
+    **/
     public List<LocalDishInfo> getDishes(){
         return dishes;
     }

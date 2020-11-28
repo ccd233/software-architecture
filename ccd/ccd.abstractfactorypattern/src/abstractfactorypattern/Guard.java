@@ -7,6 +7,7 @@ import tools.PrintTool;
 
 public class Guard implements Staff{
     @Override
+    //实现work接口
     public void work() {
         PrintTool.print("I am a guard, I can keep you safe!");
     }

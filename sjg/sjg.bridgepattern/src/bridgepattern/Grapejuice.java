@@ -7,8 +7,6 @@ package bridgepattern;
  **/
 
 public class Grapejuice implements Drink {
-
-    @Override
     /**
      * @Author: Song Jungang
      * @Description: 具体实现
@@ -24,6 +22,7 @@ public class Grapejuice implements Drink {
      * @Date: 14:04 2020/11/19
      * @Modified By:
      **/
+    @Override
     public String getdrink() {
         return "grapejuice";
     }

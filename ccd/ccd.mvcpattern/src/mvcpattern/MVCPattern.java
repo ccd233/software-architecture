@@ -7,6 +7,7 @@ package mvcpattern;
  * @Modified By:
  **/
 public class MVCPattern {
+    //MVC模式的展示调用接口
     public static void work() {
         //创建一个初试的Animal model
         Animal animal1=new Animal("泡泡", "Fish");

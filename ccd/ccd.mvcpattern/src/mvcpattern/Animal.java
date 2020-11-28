@@ -13,15 +13,47 @@ public class Animal {
         this.name=name;
         this.species=species;
     }
+    /**
+     * name的setter
+     * @param name
+     * @return void
+     * @author Chi Chengdao
+     * @date 2020/11/27 11:57 下午
+     */
+
     public void setName(String name) {
         this.name=name;
     }
+    /**
+     * species的setter
+     * @param species
+     * @return void
+     * @author Chi Chengdao
+     * @date 2020/11/27 11:57 下午
+     */
+
     public void setSpecies(String species) {
         this.species = species;
     }
+    /**
+     * name的getter
+     * @param
+     * @return java.lang.String
+     * @author Chi Chengdao
+     * @date 2020/11/27 11:57 下午
+     */
+
     public String getName() {
         return this.name;
     }
+    /**
+     * species的getter
+     * @param
+     * @return java.lang.String
+     * @author Chi Chengdao
+     * @date 2020/11/27 11:57 下午
+     */
+
     public String getSpecies() {
         return this.species;
     }

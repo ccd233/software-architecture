@@ -7,6 +7,7 @@ import tools.PrintTool;
 
 
 public class AbstractFactoryDemo {
+    //抽象工厂测试demo
     public static void work() {
         PrintTool.print("使用工厂生成器生成动物工厂，动物工厂创建鱼类，螃蟹和虾类对象，每个对象调用自己的方法进行展示");
 

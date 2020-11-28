@@ -4,7 +4,12 @@ import tools.PrintTool;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * @Author Guan Jinghui
+ * @Description:
+ * @Date: Created in 11:42 下午 2020/11/27
+ * @Modified By:
+ **/
 public class Originator {
 
 	private List<String> states;
@@ -46,9 +51,9 @@ public class Originator {
      */
     public void pringStates() {
         PrintTool.print("");
-        System.out.println("Current number of lighting type：" + states.size());
+        PrintTool.print("Current number of lighting type：" + states.size());
         for (String state : states) {
-            System.out.println(state);
+            PrintTool.print(state);
         }
     }
 }

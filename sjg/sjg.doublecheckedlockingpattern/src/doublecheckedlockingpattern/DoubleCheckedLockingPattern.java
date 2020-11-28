@@ -9,6 +9,21 @@ import tools.PrintTool;
  * @Modified By:
  **/
 public class DoubleCheckedLockingPattern {
+    /**
+     * @Author: Song Jungang
+     * @Description: 将模式封装为接口，供Main调用
+     *
+     * @Param Type
+     * param:
+     * resume:
+     *
+     * @Return Value
+     * @return: void
+     * @resume:
+     *
+     * @Date: 18:19 2020/11/28
+     * @Modified By:
+    **/
     public static void doubleCheckedLocking() {
         Maps m1= Maps.getinstance();
         Maps m2= Maps.getinstance();

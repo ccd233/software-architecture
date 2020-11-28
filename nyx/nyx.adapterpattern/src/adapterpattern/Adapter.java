@@ -1,10 +1,12 @@
 package adapterpattern;
 
+import tools.PrintTool;
+
 import java.util.UUID;
 
 /**
  * @Author Nie Yixin
- * @Description:
+ * @Description: 适配器
  * @Date: Created in 14:06 2020/11/13
  * @Modified By:
  **/
@@ -20,13 +22,13 @@ public class Adapter extends RegularMember implements Target{
     }
     /**
      * @Author: Nie Yixin
-     * @Description: By using adapter, the regular member can queue in fast channel
+     * @Description: 使用适配器，普通用户使用快速通道进行排队
      *
      * @Param Type
      *
      *
      * @Return Value
-     * @return:
+     * @return: void
      * @resume:
      *
      * @Date:
@@ -34,6 +36,6 @@ public class Adapter extends RegularMember implements Target{
     **/
     @Override
     public void quickQueue(){
-        System.out.println("queueing in fast channel..");
+        PrintTool.print("queueing in fast channel..");
     }
 }

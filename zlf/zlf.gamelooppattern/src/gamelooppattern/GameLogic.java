@@ -14,6 +14,7 @@ public class GameLogic extends Thread{
         initH=_height;
     }
 
+    //Let the ball drop
     @Override
     public void run() {
         while(Loop && y>=0){
@@ -31,6 +32,7 @@ public class GameLogic extends Thread{
         Loop=false;
     }
 
+    //start a new thread to let ball drop
     @Override
     public void start () {
         System.out.println("Dropping");
@@ -40,14 +42,17 @@ public class GameLogic extends Thread{
         }
     }
 
+    //end the thread
     public void end(){
         Loop=false;
     }
 
+    //Height Getter
     public double height(){
         return y;
     }
 
+    //Loop Getter
     public boolean isLoop(){
         return Loop;
     }

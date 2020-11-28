@@ -2,7 +2,7 @@ package prototypepattern;
 
 /**
  * @Author Nie Yixin
- * @Description:
+ * @Description: Turtle实体类
  * @Date: Created in 10:12 2020/11/13
  * @Modified By:
  **/
@@ -24,7 +24,20 @@ public class Turtle extends Fish{
             this.year = target.year;
         }
     }
-
+    /***
+     * @Author: Nie Yixin
+     * @Description: clone
+     *
+     * @Param Type
+     *
+     *
+     * @Return Value
+     * @return: Turtle object
+     * @resume:
+     *
+     * @Date:
+     * @Modified By:
+    **/
     @Override
     public Turtle clone() {
         return new Turtle(this);

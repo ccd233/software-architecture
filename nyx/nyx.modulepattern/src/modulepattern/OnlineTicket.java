@@ -1,5 +1,7 @@
 package modulepattern;
 
+import tools.PrintTool;
+
 /**
  * @Author Nie Yixin
  * @Description: buy ticket online
@@ -7,13 +9,40 @@ package modulepattern;
  * @Modified By:
  **/
 public class OnlineTicket extends GetTicket{
+    /***
+     * @Author: Nie Yixin
+     * @Description: 网上购票
+     *
+     * @Param Type
+     *
+     *
+     * @Return Value
+     * @return: void
+     * @resume:
+     *
+     * @Date:
+     * @Modified By:
+    **/
     @Override
     void buyTicket() {
-        System.out.println("buy tickets online.");
+        PrintTool.print("buy tickets online.");
     }
-
+    /***
+     * @Author: Nie Yixin
+     * @Description: 网上购票的进园方式
+     *
+     * @Param Type
+     *
+     *
+     * @Return Value
+     * @return: void
+     * @resume:
+     *
+     * @Date:
+     * @Modified By:
+    **/
     @Override
     void getTicket() {
-        System.out.println("Get the ticket by presenting the purchase certificate.");
+        PrintTool.print("Get the ticket by presenting the purchase certificate.");
     }
 }

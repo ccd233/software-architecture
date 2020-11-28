@@ -10,6 +10,21 @@ import tools.PrintTool;
  **/
 public class UselessGuideMan extends GuideMan {
 
+    /**
+     * @Author: Wang Wenzheng
+     * @Description: 构造函数
+     *
+     * @Param Type
+     * param: name
+     * resume: 向导名
+     *
+     * @Return Value
+     * @return:
+     * @resume:
+     *
+     * @Date: 18:22 2020/11/28
+     * @Modified By:
+     **/
     public UselessGuideMan(String name) {
         super(name);
         PrintTool.print("I am idiot "+name+"，I can do nothing");

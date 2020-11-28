@@ -10,6 +10,22 @@ import tools.PrintTool;
  **/
 public class GateGuideMan extends GuideMan {
     private String questionType="gate";
+
+    /**
+     * @Author: Wang Wenzheng
+     * @Description: 构造函数
+     *
+     * @Param Type
+     * param: name
+     * resume: 向导名
+     *
+     * @Return Value
+     * @return:
+     * @resume:
+     *
+     * @Date: 18:22 2020/11/28
+     * @Modified By:
+     **/
     public GateGuideMan(String name) {
         super(name);
         PrintTool.print("I am normal guide "+name+"，I only know where the gate is");

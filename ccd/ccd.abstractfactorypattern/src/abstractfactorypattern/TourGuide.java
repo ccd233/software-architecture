@@ -7,6 +7,14 @@ import tools.PrintTool;
 
 public class TourGuide implements Staff{
     @Override
+    /**
+     * work接口实现
+     * @param
+     * @return void
+     * @author Chi Chengdao
+     * @date 2020/11/27 11:33 下午
+     */
+
     public void work() {
         PrintTool.print("I am a guide, I can show you around!");
     }

@@ -1,18 +1,20 @@
 package delegationpattern;
 
+import tools.PrintTool;
+
 /**
  * @Author Nie Yixin
- * @Description:
+ * @Description: 展示了海豚先天的跳跃技能和通过学习后的握手技能
  * @Date: Created in 19:19 2020/11/25
  * @Modified By:
  **/
 public class DelegationPattern {
     public static void delegationPattern(){
         Dolphin dolphin = new Dolphin();
-        System.out.println("the dolphin is born with jumping:");
+        PrintTool.print("the dolphin is born with jumping:");
         dolphin.showSkill();
         Skill handshake = new Handshake();
-        System.out.println("the dolphin can learn to handshake:");
+        PrintTool.print("the dolphin can learn to handshake:");
         dolphin.learnSkill(handshake);
         dolphin.showSkill();
     }

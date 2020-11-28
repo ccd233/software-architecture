@@ -13,6 +13,12 @@ public class changeThread extends Thread{
 
     private final Data data;
 
+    /**
+     * 构造函数
+     * @param name
+     * @param data
+     * @param count
+     */
     public changeThread(String name, Data data,Integer count) {
         super(name);
         this.data = data;

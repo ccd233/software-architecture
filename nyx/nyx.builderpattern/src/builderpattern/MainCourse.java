@@ -2,7 +2,7 @@ package builderpattern;
 
 /**
  * @Author Nie Yixin
- * @Description:
+ * @Description: MainCourse实体类
  * @Date: Created in 13:02 2020/11/13
  * @Modified By:
  **/

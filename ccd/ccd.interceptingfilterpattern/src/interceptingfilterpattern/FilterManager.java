@@ -8,15 +8,16 @@ package interceptingfilterpattern;
  **/
 public class FilterManager {
     FilterChain filterChain;
-
+    //管理filter
     public FilterManager(Customer customer){
         filterChain = new FilterChain();
         filterChain.setCustomer(customer);
     }
+    //添加filter
     public void addFilter(Filter filter){
         filterChain.addFilter(filter);
     }
-
+    //执行filterchain
     public void filterRequest(String request){
         filterChain.execute(request);
     }

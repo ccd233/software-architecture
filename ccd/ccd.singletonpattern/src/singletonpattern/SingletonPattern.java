@@ -7,6 +7,14 @@ import tools.PrintTool;
  **/
 
 public class SingletonPattern {
+    /**
+     * 单例模式实现的演示接口
+     * @param
+     * @return void
+     * @author Chi Chengdao
+     * @date 2020/11/28 12:16 上午
+     */
+
     public static void work() {
         PrintTool.print("Singleton Test Demo");
         System.out.println("If you see the same name(小鲤鱼泡泡), then singleton was reused " + "\n" +
@@ -18,6 +26,14 @@ public class SingletonPattern {
         thread2.start();
     }
 
+    /**
+     * 实现一个可用的线程
+     * @param null
+     * @return
+     * @author Chi Chengdao
+     * @date 2020/11/28 12:18 上午
+     */
+
     static class Thread1 implements Runnable {
         @Override
         public void run() {
@@ -26,6 +42,13 @@ public class SingletonPattern {
         }
     }
 
+    /**
+     * 实现一个可用的线程
+     * @param null
+     * @return
+     * @author Chi Chengdao
+     * @date 2020/11/28 12:18 上午
+     */
     static class Thread2 implements Runnable {
         @Override
         public void run() {

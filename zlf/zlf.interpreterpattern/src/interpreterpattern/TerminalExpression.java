@@ -42,7 +42,8 @@ public class TerminalExpression implements Expression{
      * @Date:  2020/11/17
      * @Modified By: 
     **/
-    
+
+    //interpret method
     public boolean interpret(String info){
         for(int i=0;i<terminalSets.size();i++) {
             if (info.contains(terminalSets.get(i))) {

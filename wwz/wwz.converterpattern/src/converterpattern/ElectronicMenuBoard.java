@@ -14,15 +14,60 @@ import java.util.List;
 public class ElectronicMenuBoard {
 
     private List<OnBoardDishInfo> dishes;
+    /**
+     * @Author: Wang Wenzheng
+     * @Description: 构造函数
+     *
+     * @Param Type
+     * param:
+     * resume:
+     *
+     * @Return Value
+     * @return:
+     * @resume:
+     *
+     * @Date: 18:25 2020/11/28
+     * @Modified By:
+    **/
     public ElectronicMenuBoard(){
         dishes=new ArrayList<>();
     }
 
+    /**
+     * @Author: Wang Wenzheng
+     * @Description: 向dishes列表中添加菜单信息
+     *
+     * @Param Type
+     * param: info
+     * resume: 菜单信息
+     *
+     * @Return Value
+     * @return: converterpattern.ElectronicMenuBoard
+     * @resume: 返回对象本身，实现流式接口
+     *
+     * @Date: 18:26 2020/11/28
+     * @Modified By:
+    **/
     public ElectronicMenuBoard addDish(OnBoardDishInfo info){
         dishes.add(info);
         return this;
     }
 
+    /**
+     * @Author: Wang Wenzheng
+     * @Description: 获取dishes列表
+     *
+     * @Param Type
+     * param:
+     * resume:
+     *
+     * @Return Value
+     * @return: java.util.List<converterpattern.OnBoardDishInfo>
+     * @resume: dishes列表
+     *
+     * @Date: 18:26 2020/11/28
+     * @Modified By:
+    **/
     public List<OnBoardDishInfo> getDishes(){
         return dishes;
     }

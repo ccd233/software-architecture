@@ -47,7 +47,8 @@ public class TicketAgent{
      * @Date:  2020/11/23
      * @Modified By: 
     **/
-    
+
+    //get ticket by facility name and tourist information
     public Ticket GetTicket() {
         Ticket ticket=SpecificEntertainmentFacilities.EntranceTicket();
         ticket.SetOwnerName(Buyer.GetName());

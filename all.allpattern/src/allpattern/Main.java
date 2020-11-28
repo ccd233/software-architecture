@@ -56,7 +56,18 @@ public class Main {
     private final List<Runnable> patternsFunc;
     private final List<String> patternName;
 
-    //main method
+    /**
+     * @Author: Wang Wenzheng
+     * @Description: main函数，主要用于打印项目信息，然后调用showPatterns方法展示各个设计模式
+     * @Param Type
+     * param: args
+     * resume:
+     * @Return Value
+     * @return: void
+     * @resume:
+     * @Date: 18:16 2020/11/28
+     * @Modified By:
+     **/
     public static void main(String[] args) {
         Main demo = new Main();
         demo.showHeadbar();
@@ -85,7 +96,7 @@ public class Main {
 
     /**
      * @Author: Wang Wenzheng
-     * @Description: 构造函数，需要在这里注册每一个设计模式
+     * @Description: 构造函数，需要在这里注册每一个设计模式,如需测试请使用下面各模式的接口，接口调用使用了lambda表达式
      * @Param Type
      * param:
      * resume:
@@ -99,6 +110,7 @@ public class Main {
         patternsFunc = new ArrayList<>();
         patternName = new ArrayList<>();
         //register patterns
+        //占位
         registerPattern("exit", () -> PrintTool.print("exit"));
         //0
         registerPattern("AbstractFactoryPattern", AbstractFactoryPattern::work);
@@ -111,21 +123,20 @@ public class Main {
         registerPattern("StatePattern", StatePattern::work);
         registerPattern("VisitorPattern", VisitorPattern::work);
         //8
-        registerPattern("DAOPattern", () -> System.out.println("!"));
         registerPattern("ObserverPattern", ObserverPattern::observerPattern);
-
         registerPattern("StrategyPattern", StrategyPattern::strategy);
         registerPattern("TemplateMethodPattern", TemplateMethodPattern::templateMethod);
+        registerPattern("DataBusPattern", DataBusPattern::dataBus);
         //12
         registerPattern("AdapterPattern", AdapterPattern::work);
         registerPattern("BuilderPattern", BuilderPattern::work);
         registerPattern("PrototypePattern", PrototypePattern::work);
         registerPattern("TransferObjectPattern", TransferObjectPattern::work);
         //16
-        registerPattern("DataAccessObjectPattern", DataAccessObjectPattern::data);
         registerPattern("DecoratorPattern", DecoratorPattern::decorator);
         registerPattern("FacadePattern", FacadePattern::facade);
         registerPattern("ProxyPattern", ProxyPattern::proxy);
+        registerPattern("DataAccessObjectPattern", DataAccessObjectPattern::dataAccessObject);
         //20
         registerPattern("BridgePattern", BridgePattern::ordering);
         registerPattern("CompositePattern", CompositePattern::addsouvenir);
@@ -138,9 +149,10 @@ public class Main {
         registerPattern("IteratorPattern", IteratorPattern::iterator);
         //28
         registerPattern("CompositeEntityPattern", CompositeEntityPattern::work);
-        registerPattern("DaoPattern", DaoPattern::work);
         registerPattern("InterpreterPattern", InterpreterPattern::work);
         registerPattern("MediatorPattern", MediatorPattern::work);
+        registerPattern("MonostatePattern", MonostatePattern::work);
+        //32
         //新加设计模式必须且仅需在下面注册
         //eg：registerPattern("PatternNameYouWannaShow",classname::methodname);
         registerPattern("FluentInterfacePattern", FluentInterfacePattern::fluentInterface);
@@ -149,21 +161,31 @@ public class Main {
         registerPattern("InterceptingFilterPattern", InterceptingFilterPattern::work);
         //36
         registerPattern("BalkingPattern", BalkingPattern::work);
-        registerPattern("DataBusPattern", DataBusPattern::dataBus);
         registerPattern("DelegationPattern", DelegationPattern::delegationPattern);
         registerPattern("ModulePattern", ModulePattern::modulePattern);
-        //40
         registerPattern("ServantPattern", ServantPattern::servant);
+        //40
         registerPattern("TypeObjectPattern", TypeObjectPattern::typeObject);
         registerPattern("DoubleCheckedLockingPattern", DoubleCheckedLockingPattern::doubleCheckedLocking);
         registerPattern("GameLoopPattern", GameLoopPattern::work);
-        //44
-        registerPattern("MonostatePattern", MonostatePattern::work);
+        //43
 
         //统计数量
         patternNumber = patternsFunc.size() - 1;
     }
 
+    /**
+     * @Author: Wang Wenzheng
+     * @Description: 打印项目说明
+     * @Param Type
+     * param:
+     * resume:
+     * @Return Value
+     * @return: void
+     * @resume:
+     * @Date: 18:15 2020/11/28
+     * @Modified By:
+     **/
     public void showHeadbar() {
         System.out.println("请输入设计模式的代号运行相应设计模式的demo:");
         for (int i = 0; i <= patternNumber; i++) {
@@ -172,6 +194,18 @@ public class Main {
         System.out.println("0: exit");
     }
 
+    /**
+     * @Author: Wang Wenzheng
+     * @Description: 获取测试者输入，并展示相应模式
+     * @Param Type
+     * param:
+     * resume:
+     * @Return Value
+     * @return: void
+     * @resume:
+     * @Date: 18:15 2020/11/28
+     * @Modified By:
+     **/
     public void showPatterns() {
         Scanner scan = new Scanner(System.in);
         while (true) {
@@ -189,7 +223,7 @@ public class Main {
                 PrintTool.print("Exit");
                 break;
             }
-            if (num > patternNumber) {
+            if (num > patternNumber || num < 0) {
                 PrintTool.print("please input a number between 1 and " + patternNumber);
                 continue;
             }

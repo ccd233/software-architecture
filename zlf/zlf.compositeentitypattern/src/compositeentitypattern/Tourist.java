@@ -71,6 +71,7 @@ public class Tourist {
      * @Modified By:
     **/
 
+    //Ticket Setter
     void SetTicket(Ticket ticket){
         if(ticket==null){
             System.out.println("Input ticket is null,please check the input and try again.\n");
@@ -79,6 +80,7 @@ public class Tourist {
         PersonalTicket=ticket;
     }
 
+    //Name Getter
     public String GetName(){
         return Name;
     }

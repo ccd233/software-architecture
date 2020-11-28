@@ -6,9 +6,20 @@ import filterpattern.person.Person;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import tools.PrintTool;
 
+/**
+ * @Author Guan Jinghui
+ * @Description:
+ * @Date: Created in 11:39 下午 2020/11/27
+ * @Modified By:
+ **/
 public class FilterPattern {
 
+	/**
+	 * 基本的演示类，运行后输入数字代表命令
+	 * @return
+	 */
 	public String filterPattern_demo() {
 		List<Person> persons = new ArrayList<Person>();
 		persons.add(new Person("A",16, "VISITOR"));
@@ -27,70 +38,79 @@ public class FilterPattern {
 		
 		Scanner scan = new Scanner(System.in);
 	    while(true) {
-	    	System.out.println("Please enter a command(0 exit，1 new a character，2 Print all children，"
+	    	PrintTool.print("Please enter a command(0 exit，1 new a character，2 Print all children，"
 	    			+ "3 Print all adult，4 Print all Visitors，\n"
 	    			+ "5 Print all Staff，6 Print children visitors, "
 	    			+ "7Print adult staff，8 print adult of staff):");
 	        String str=scan.next();
 	        //input.add(str);
 	        if(str.equals("0")) {
-	        	System.out.println("close");
+	        	PrintTool.print("close");
 	            break;
 	        }
 	        else if(str.equals("1")) {
-	        	System.out.println("Please enter a name：");
+	        	PrintTool.print("Please enter a name：");
 	        	String name = scan.next();
-	        	System.out.println("Please enter the age：");
+	        	PrintTool.print("Please enter the age：");
 	        	String age_string = scan.next();
 				int age=Integer.parseInt(age_string);
-	        	System.out.println("Please enter the status(VISITOR or STAFF)：");
+	        	PrintTool.print("Please enter the status(VISITOR or STAFF)：");
 	        	String type = scan.next();
 	        	persons.add(new Person(name, age, type));
-	        	//System.out.println(name);
-	        	//System.out.println(age);
+	        	//PrintTool.print(name);
+	        	//PrintTool.print(age);
 	        }
 	        else if(str.equals("2")) {
-	        	System.out.println("children: ");
+	        	PrintTool.print("children: ");
 	    		printPersons(children.meetCriteria(persons));
 	        }
 	        else if(str.equals("3")){
-	        	System.out.println("adult: ");
+	        	PrintTool.print("adult: ");
 	    		printPersons(adult.meetCriteria(persons));
 	        }
 	        else if(str.equals("4")){
-	        	System.out.println("visitors: ");
+	        	PrintTool.print("visitors: ");
 	    		printPersons(visitors.meetCriteria(persons));
 	        }
 	        else if(str.equals("5")){
-	        	System.out.println("staff: ");
+	        	PrintTool.print("staff: ");
 	    		printPersons(staff.meetCriteria(persons));
 	        }
 	        else if(str.equals("6")){
-	        	System.out.println("childrenVisitors: ");
+	        	PrintTool.print("childrenVisitors: ");
 	    		printPersons(childrenVisitors.meetCriteria(persons));
 	        }
 	        else if(str.equals("7")){
-	        	System.out.println("adultStaff: ");
+	        	PrintTool.print("adultStaff: ");
 	    		printPersons(adultStaff.meetCriteria(persons));
 	        }
 	        else if(str.equals("8")){
-	        	System.out.println("adultOrStaff: ");
+	        	PrintTool.print("adultOrStaff: ");
 	    		printPersons(adultOrStaff.meetCriteria(persons));
 	        }
 	        else {
-				System.out.println("Input Error:");
+				PrintTool.print("Input Error:");
 			}
 	    }
 		return null;
 	}
+
+	/**
+	 * 打印人员信息的函数
+	 * @param persons
+	 */
 	public static void printPersons(List<Person> persons) {
 		for (Person person : persons) {
-			System.out.println("Person : [ Name : " + person.getName() 
+			PrintTool.print("Person : [ Name : " + person.getName()
             +", Age : " + person.getAge() 
             +", Type : " + person.getType()
             +" ]");
 		}
 	}
+
+	/**
+	 * 接口函数
+	 */
 	public static void work() {
 		FilterPattern demo = new FilterPattern();
 		demo.filterPattern_demo();

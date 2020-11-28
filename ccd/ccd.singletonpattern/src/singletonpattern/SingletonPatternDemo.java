@@ -7,6 +7,14 @@ import tools.PrintTool;
  **/
 
 public class SingletonPatternDemo {
+
+    /**
+     * 单例模式实现的演示接口
+     * @param
+     * @return void
+     * @author Chi Chengdao
+     * @date 2020/11/28 12:16 上午
+     */
     public static void work() {
         PrintTool.print("\nIf you see the same name(小鲤鱼泡泡), then singleton was reused(√) " + "\n" +
                 "If you see different name(小鲤鱼泡泡,水母小美美), then 2 singletons were created(X) " + "\n" +

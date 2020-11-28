@@ -10,6 +10,21 @@ import tools.PrintTool;
  **/
 public class FoodGuideMan extends GuideMan{
     private String questionType="food";
+    /**
+     * @Author: Wang Wenzheng
+     * @Description: 构造函数
+     *
+     * @Param Type
+     * param: name
+     * resume: 向导名
+     *
+     * @Return Value
+     * @return:
+     * @resume:
+     *
+     * @Date: 18:22 2020/11/28
+     * @Modified By:
+    **/
     public FoodGuideMan(String name) {
         super(name);
         PrintTool.print("I am normal guide "+name+"，I only know where you can eat food");

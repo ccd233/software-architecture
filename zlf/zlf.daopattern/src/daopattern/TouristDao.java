@@ -52,16 +52,18 @@ public class TouristDao implements Dao<Tourist> {
      * @Date:  2020/11/23
      * @Modified By: 
     **/
-    
+
+    //Getter(by index)
     @Override
     public Tourist GetObject(int index) {
         return TouristList.get(index);
     }
 
+    //Serach Tourist In List By Name
     public List<Integer> SearchByName(String Name){
         List<Integer> index_list=new ArrayList<Integer>();
         for(int i=0;i<TouristList.size();i++){
-            if(TouristList.get(i).GetName()==Name){
+            if(TouristList.get(i).GetName().equals(Name)){
                 index_list.add(i);
             }
         }
@@ -83,7 +85,8 @@ public class TouristDao implements Dao<Tourist> {
      * @Date:  2020/11/23
      * @Modified By: 
     **/
-    
+
+    //Delete A Tourist In List
     @Override
     public void DeleteObject(int index) {
         TouristList.remove(index);
@@ -104,12 +107,14 @@ public class TouristDao implements Dao<Tourist> {
      * @Date:  2020/11/23
      * @Modified By: 
     **/
-    
+
+    //Add A Tourist
     @Override
     public void AddObject(Tourist object) {
         TouristList.add(object);
     }
 
+    //Singleton GetInstance Method
     public static TouristDao GetInstance(){
         if(Instance==null){
             Instance=new TouristDao();

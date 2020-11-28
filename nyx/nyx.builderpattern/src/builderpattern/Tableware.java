@@ -2,7 +2,7 @@ package builderpattern;
 
 /**
  * @Author Nie Yixin
- * @Description:
+ * @Description: Tableware实体类
  * @Date: Created in 13:10 2020/11/13
  * @Modified By:
  **/

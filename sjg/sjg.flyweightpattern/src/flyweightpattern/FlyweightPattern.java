@@ -8,7 +8,7 @@ package flyweightpattern;
 public class FlyweightPattern {
     /**
      * @Author: Song Jungang
-     * @Description: 打印出所需潜水服型号
+     * @Description: 打印出所需潜水服型号，将模式封装为接口供Main调用
      *
      * @Param Type
      * param:

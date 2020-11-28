@@ -62,7 +62,8 @@ public class Tourist {
      * @Date:  2020/11/23
      * @Modified By: 
     **/
-    
+
+    //Name Getter
     public String GetName(){
         return Name;
     }

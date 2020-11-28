@@ -52,7 +52,8 @@ public class EntertainmentFacilities {
      * @Date:  2020/11/23
      * @Modified By: 
     **/
-    
+
+    //return ticket by facility type
     public Ticket EntranceTicket(){
         Ticket TicketType=new Ticket(TicketPrice,this);
         return TicketType;
@@ -73,11 +74,13 @@ public class EntertainmentFacilities {
      * @Date:  2020/11/23
      * @Modified By: 
     **/
-    
+
+    //facility name getter
     public String FacilityName(){
         return Name;
     }
 
+    //facility infomation serialization
     public String FacilityInformation(){
         return "Facility Name:"+Name+",Price:"+Integer.toString(TicketPrice);
     }

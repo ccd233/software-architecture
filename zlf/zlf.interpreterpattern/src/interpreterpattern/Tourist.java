@@ -66,6 +66,7 @@ public class Tourist {
      * @Modified By:
      **/
 
+    //Tourist Information Serialization
     public String getInformation(){
         return Integer.toString(Age)+","+Occupation;
     }
@@ -85,7 +86,8 @@ public class Tourist {
      * @Date:  2020/11/24
      * @Modified By: 
     **/
-    
+
+    //Name Getter
     public String GetName(){
         return Name;
     }

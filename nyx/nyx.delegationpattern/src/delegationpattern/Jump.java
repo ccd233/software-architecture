@@ -1,6 +1,8 @@
 package delegationpattern;
 
 
+import tools.PrintTool;
+
 /**
  * @Author Nie Yixin
  * @Description: jump skill
@@ -8,8 +10,22 @@ package delegationpattern;
  * @Modified By:
  **/
 public class Jump implements Skill{
+    /***
+     * @Author: Nie Yixin
+     * @Description: 展示跳跃技能
+     *
+     * @Param Type
+     *
+     *
+     * @Return Value
+     * @return: void
+     * @resume:
+     *
+     * @Date:
+     * @Modified By:
+    **/
     @Override
     public void showSkill() {
-        System.out.println("Jump in the air...");
+        PrintTool.print("Jump in the air...");
     }
 }

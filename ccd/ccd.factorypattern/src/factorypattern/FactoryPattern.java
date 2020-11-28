@@ -7,6 +7,7 @@ package factorypattern;
 import tools.PrintTool;
 
 public class FactoryPattern {
+    //工厂模式测试demo
     public static void work() {
         PrintTool.print("Factory Pattern Test Demo");
 

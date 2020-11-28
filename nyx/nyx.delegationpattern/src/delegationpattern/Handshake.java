@@ -1,5 +1,7 @@
 package delegationpattern;
 
+import tools.PrintTool;
+
 /**
  * @Author Nie Yixin
  * @Description: handshake skill
@@ -7,8 +9,22 @@ package delegationpattern;
  * @Modified By:
  **/
 public class Handshake implements Skill{
+    /***
+     * @Author: Nie Yixin
+     * @Description: 展示握手技能
+     *
+     * @Param Type
+     *
+     *
+     * @Return Value
+     * @return: void
+     * @resume:
+     *
+     * @Date:
+     * @Modified By:
+    **/
     @Override
     public void showSkill() {
-        System.out.println("Handshake with the trainer...");
+        PrintTool.print("Handshake with the trainer...");
     }
 }

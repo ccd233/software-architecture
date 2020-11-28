@@ -8,6 +8,15 @@ import tools.PrintTool;
  * @Modified By:
  **/
 public class AnimalView {
+    /**
+     * view展示具体实现的方法
+     * @param animalName
+	 * @param speciesName
+     * @return void
+     * @author Chi Chengdao
+     * @date 2020/11/28 12:07 上午
+     */
+
     public void showAnimalDetails(String animalName, String speciesName) {
         PrintTool.print("This animal is "+speciesName+", it's name is "+animalName+"!");
     }

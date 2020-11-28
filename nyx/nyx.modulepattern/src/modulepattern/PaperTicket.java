@@ -1,6 +1,8 @@
 package modulepattern;
 
 
+import tools.PrintTool;
+
 /**
  * @Author Nie Yixin
  * @Description: buy ticket in cash
@@ -8,13 +10,40 @@ package modulepattern;
  * @Modified By:
  **/
 public class PaperTicket extends GetTicket{
+    /***
+     * @Author: Nie Yixin
+     * @Description: 现金购票
+     *
+     * @Param Type
+     *
+     *
+     * @Return Value
+     * @return: void
+     * @resume:
+     *
+     * @Date:
+     * @Modified By:
+    **/
     @Override
     void buyTicket() {
-        System.out.println("buy the ticket in cash.");
+        PrintTool.print("buy the ticket in cash.");
     }
-
+    /***
+     * @Author: Nie Yixin
+     * @Description: 现金购票的进园方式
+     *
+     * @Param Type
+     *
+     *
+     * @Return Value
+     * @return: void
+     * @resume:
+     *
+     * @Date:
+     * @Modified By:
+    **/
     @Override
     void getTicket() {
-        System.out.println("get ticket immediately.");
+        PrintTool.print("get ticket immediately.");
     }
 }

@@ -5,4 +5,5 @@
  * @Modified By:
  **/module nyx.delegationpattern {
      exports delegationpattern;
+     requires wwz.basictools;
 }

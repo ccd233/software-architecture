@@ -5,4 +5,5 @@
  * @Modified By:
  **/module nyx.modulepattern {
      exports modulepattern;
+     requires wwz.basictools;
 }

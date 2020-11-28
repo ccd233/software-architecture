@@ -12,21 +12,74 @@ public class ChildrenBuilder implements Builder{
     private int price;
     private Tableware tableware;
 
+    /***
+     * @Author: Nie Yixin
+     * @Description: setMainCourse
+     *
+     * @Param Type
+     * MainCourse object
+     *
+     * @Return Value
+     * @return: void
+     * @resume:
+     *
+     * @Date:
+     * @Modified By:
+    **/
     @Override
     public void setMainCourse(MainCourse mainCourse){
         this.mainCourse = mainCourse;
     }
-
+    /***
+     * @Author: Nie Yixin
+     * @Description: setDrinks
+     *
+     * @Param Type
+     * Drink object
+     *
+     * @Return Value
+     * @return: void
+     * @resume:
+     *
+     * @Date:
+     * @Modified By:
+    **/
     @Override
     public void setDrinks(Drink drinks) {
         this.drinks = drinks;
     }
-
+    /***
+     * @Author: Nie Yixin
+     * @Description: setPrice
+     *
+     * @Param Type
+     * int
+     *
+     * @Return Value
+     * @return: void
+     * @resume:
+     *
+     * @Date:
+     * @Modified By:
+    **/
     @Override
     public void setPrice(int price) {
         this.price = price;
     }
-
+    /***
+     * @Author: Nie Yixin
+     * @Description: setTableware
+     *
+     * @Param Type
+     * Tableware object
+     *
+     * @Return Value
+     * @return: void
+     * @resume:
+     *
+     * @Date:
+     * @Modified By:
+    **/
     @Override
     public void setTableware(Tableware tableware) {
         this.tableware = tableware;

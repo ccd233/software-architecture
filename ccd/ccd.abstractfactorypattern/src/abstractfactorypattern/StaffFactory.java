@@ -7,11 +7,20 @@ import tools.PrintTool;
 
 public class StaffFactory extends AbstractFactory{
     @Override
+    //员工工厂不需要对动物工厂对象进行创建
     public Animal getAnimal(String animal) {
         return null;
     }
 
     @Override
+    /**
+     *扩展员工工厂接口
+     * @param staff
+     * @return abstractfactorypattern.Staff
+     * @author Chi Chengdao
+     * @date 2020/11/27 11:31 下午
+     */
+
     public Staff getStaff(String staff){
         if(staff == null){
             return null;

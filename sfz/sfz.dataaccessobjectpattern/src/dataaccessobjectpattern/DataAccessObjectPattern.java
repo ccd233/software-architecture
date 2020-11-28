@@ -21,7 +21,13 @@ public class DataAccessObjectPattern {
      * @Date: 14:18 2020/11/19
      * @Modified By:
      **/
-    public static void data() {
+    public static void dataAccessObject() {
+        PrintTool.print("Data Access Object Pattern" + "\n" +
+                "Scenario Introduction:This is used to manage the passengers visiting the carnival." + "\n" +
+                "Every passenger will be registered when getting into the carnival." + "\n" +
+                "And a passenger list contains all the passengers' information." + "\n" +
+                "Staff can only do operations on passenger through the interface instead of interfere passenger directly." + "\n");
+
         PassengerInterface passengerQuery = new PassengerInterfaceImplement();
 
 //        Check out all the passengers.

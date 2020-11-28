@@ -9,6 +9,21 @@ package commandpattern;
 public class CookOrder implements iOrder {
     private Dish dish;
 
+    /**
+     * @Author: Wang Wenzheng
+     * @Description: 构造函数
+     *
+     * @Param Type
+     * param: dish
+     * resume: 菜品名
+     *
+     * @Return Value
+     * @return:
+     * @resume:
+     *
+     * @Date: 18:24 2020/11/28
+     * @Modified By:
+    **/
     public CookOrder(Dish dish){
         this.dish=dish;
     }

@@ -1,4 +1,4 @@
-module gjh.filterPattern {
+module gjh.filterpattern {
     requires wwz.basictools;
     exports filterpattern;
 }

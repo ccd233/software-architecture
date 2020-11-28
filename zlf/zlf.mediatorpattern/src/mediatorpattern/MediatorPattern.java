@@ -1,5 +1,7 @@
 package mediatorpattern;
 
+import tools.PrintTool;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -28,13 +30,15 @@ public class MediatorPattern {
      * @Date:  2020/11/23
      * @Modified By: 
     **/
-    
+
+    //tourist buys ticket by ticket agent
     public void BuyTicket(Tourist tourist,EntertainmentFacilities entertainmentFacilities){
         TicketAgent EFTicketAgent=new TicketAgent(tourist,entertainmentFacilities);
         Ticket EFTicket=EFTicketAgent.GetTicket();
-        System.out.println(EFTicket.TicketInf());
+        PrintTool.print(EFTicket.TicketInf());
     }
 
+    //output interface
     public static void work(){
         EntertainmentFacilities EF1=new EntertainmentFacilities("Aquarium",35);
         EntertainmentFacilities EF2=new EntertainmentFacilities("Exploring Undersea",50);
@@ -43,30 +47,30 @@ public class MediatorPattern {
         EntertainmentList.add(EF1);
         EntertainmentList.add(EF2);
         EntertainmentList.add(EF3);
-        System.out.println("Entertainment Facilities List:");
-        System.out.println(EF1.FacilityInformation());
-        System.out.println(EF2.FacilityInformation());
-        System.out.println(EF3.FacilityInformation());
+        PrintTool.print("Entertainment Facilities List:");
+        PrintTool.print(EF1.FacilityInformation());
+        PrintTool.print(EF2.FacilityInformation());
+        PrintTool.print(EF3.FacilityInformation());
 
         String Name = null;
         int Age=-1;
         String Occupation=null;
         Scanner input = new Scanner(System.in);
         while(Age<=0||Name==null||Occupation==null){
-            System.out.println("Tourist Name:");
+            PrintTool.print("Tourist Name:");
             Name = input.nextLine();
-            System.out.println("Tourist Age:");
+            PrintTool.print("Tourist Age:");
             Age=Integer.parseInt(input.nextLine());
-            System.out.println("Tourist Occupation:");
+            PrintTool.print("Tourist Occupation:");
             Occupation=input.nextLine();
             if(Age<=0||Name==null||Occupation==null){
-                System.out.println("Invalid Input.Please check again.\n");
+                PrintTool.print("Invalid Input.Please check again.\n");
             }
         }
         Tourist Visitor=new Tourist(Name,Age,Occupation);
         EntertainmentFacilities EF=null;
         while(EF==null){
-            System.out.println("Visiting Facility Name:");
+            PrintTool.print("Visiting Facility Name:");
             String FacilityName=input.nextLine();
             for(int i=0;i<EntertainmentList.size();i++){
                 if(EntertainmentList.get(i).FacilityName().equals(FacilityName)){
@@ -74,13 +78,13 @@ public class MediatorPattern {
                 }
             }
             if(EF==null){
-                System.out.println("The input name is invalid,please check again.\n");
+                PrintTool.print("The input name is invalid,please check again.\n");
             }
         }
 
         TicketAgent EFTicketAgent=new TicketAgent(Visitor,EF);
         Ticket EFTicket=EFTicketAgent.GetTicket();
-        System.out.println("Got Ticket!\n");
-        System.out.println(EFTicket.TicketInf());
+        PrintTool.print("Got Ticket!\n");
+        PrintTool.print(EFTicket.TicketInf());
     }
 }

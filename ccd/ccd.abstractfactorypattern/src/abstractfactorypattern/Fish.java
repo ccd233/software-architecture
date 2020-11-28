@@ -8,10 +8,12 @@ import tools.PrintTool;
 
 public class Fish implements Animal{
     @Override
+    //实现speak接口
     public void speak() {
         PrintTool.print("I am Fish!");
     }
     @Override
+    //实现show接口
     public void show() {
         PrintTool.print("I have a tail, so I can swim!");
     }

@@ -1,5 +1,5 @@
 package balkingpattern;
-
+import tools.PrintTool;
 /**
  * @Author Guan Jinghui
  * @Description:
@@ -23,16 +23,30 @@ public class Data {
      */
     private String content;
 
+    /**
+     * 构造函数
+     * @param fileName
+     * @param changeFlag
+     * @param content
+     */
     public Data(String fileName, boolean changeFlag, String content) {
         this.fileName = fileName;
         this.changeFlag = changeFlag;
         this.content = content;
     }
+
+    /**
+     * 检测是否改变
+     * @param content
+     */
     public synchronized void change(final String content) {
         this.content = content;
         this.changeFlag = true;
     }
 
+    /**
+     * 若改变，则调用保存的方法
+     */
     public synchronized void save() {
         //balking   没有变化直接返回
         if(!changeFlag) {
@@ -42,8 +56,11 @@ public class Data {
         this.changeFlag = false;
     }
 
+    /**
+     * 保存的方法
+     */
     private void doSave() {
-        System.out.println(Thread.currentThread().getName() +
+        PrintTool.print(Thread.currentThread().getName() +
                 " calls do save content: "+content+
                 " to file " + fileName);
     }

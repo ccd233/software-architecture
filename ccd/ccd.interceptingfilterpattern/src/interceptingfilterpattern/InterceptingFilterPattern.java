@@ -9,6 +9,7 @@ package interceptingfilterpattern;
  * @Modified By:
  **/
 public class InterceptingFilterPattern {
+    //模式演示
     public static void work() {
         //首先创造一条记录点菜做菜上菜吃菜信息log的FilterManager
         FilterManager filterManager = new FilterManager(new Customer());

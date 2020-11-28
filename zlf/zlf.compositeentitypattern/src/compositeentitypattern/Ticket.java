@@ -53,7 +53,8 @@ public class Ticket {
      * @Date:  2020/11/24
      * @Modified By: 
     **/
-    
+
+    //owner Setter
     void SetOwnerName(String ownerName){
         OwnerName=ownerName;
     }
@@ -73,7 +74,8 @@ public class Ticket {
      * @Date:  2020/11/24
      * @Modified By: 
     **/
-    
+
+    //Ticket Information Serialization
     String TicketInf(){
         String ticketInf="Owner Name:"+OwnerName+",Facility:"+SpecificEntertainmentFacilities.FacilityName()+",Price:"+Integer.toString(TicketPrice);
         return ticketInf;

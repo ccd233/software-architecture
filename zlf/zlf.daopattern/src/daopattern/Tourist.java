@@ -48,6 +48,7 @@ public class Tourist {
         Occupation=_occupation;
     }
 
+    //Name Getter
     public String GetName(){
         return Name;
     }

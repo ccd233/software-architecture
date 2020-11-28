@@ -7,5 +7,19 @@ package delegationpattern;
  * @Modified By:
  **/
 public interface Skill {
+    /***
+     * @Author: Nie Yixin
+     * @Description: 展示技能接口
+     *
+     * @Param Type
+     *
+     *
+     * @Return Value
+     * @return:
+     * @resume:
+     *
+     * @Date:
+     * @Modified By:
+    **/
     public void showSkill();
 }
