@@ -77,6 +77,7 @@ public class Main {
         demo.showHeadbar();
         demo.showPatterns();
         PrintTool.print("all done, thanks");
+        System.exit(0);
     }
 
     /**
